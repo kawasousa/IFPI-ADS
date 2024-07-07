@@ -1,6 +1,6 @@
 import os
 
-from utils import text_utils, math_utils
+from pastaTeste1.utils import text_utils, math_utils
 
 def main():
 	run_application = "y"
