@@ -39,7 +39,9 @@ export function sumVectors(vector1, vector2){
 
 //Return the received array with the received item added
 export function addToVector(item, vector){
-    return vector.push(item)
+    const newVector = vector
+    newVector.push(item)
+    return newVector
 }
 
 //Return the same vector received but without the received item
@@ -53,4 +55,8 @@ export function removeFromVector(item, vector){
     }
 
     return newList
+}
+
+export function isPositive(item){
+    return item >= 0
 }

@@ -47,9 +47,14 @@ export function showTitle(text){
 }
 
 export function divideLines(){
-    console.log('----------')
+    console.log('\n----------')
 }
 
 export function awaitEnter(){
-    question('\nPressione ENTER para voltar ao Menu Principal.')
+    divideLines()
+    question('Pressione ENTER para voltar ao Menu Principal.')
+}
+
+export function isNumberInRange(number, min, max){
+    return number > min && number < max
 }

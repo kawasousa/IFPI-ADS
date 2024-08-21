@@ -1,4 +1,5 @@
 import { getRandomNumber, getNumber } from "./utils.js";
+import { addToVector, isPositive } from "./vector_utils.js";
 
 export function generateVector(length, minimum, maximum){
     const vector = []
@@ -44,13 +45,16 @@ export function getLargestNumber(vector){
 }
 
 export function getLargestIndex(vector){
-    let largestNumber = vector[0]
+    let largestNumber = getLargestNumber(vector)
     let largestIndex = 0
 
     for(let index = 0; index < vector.length; index++){
         const item = vector[index]
 
-        if(item > largestNumber)
+        if(item == largestNumber){
+            largestIndex = index
+            break
+        }
     }
 
     return largestIndex
@@ -67,6 +71,22 @@ export function getSmallestNumber(vector){
     }
 
     return smallest
+}
+
+export function getSmallestIndex(vector){
+    let smallestNumber = getSmallestNumber(vector)
+    let smallestIndex = 0
+
+    for(let index = 0; index < vector.length; index++){
+        const item = vector[index]
+
+        if(item == smallestNumber){
+            smallestIndex = index
+            break
+        }
+    }
+
+    return smallestIndex
 }
 
 //Show the itens of the received vector
@@ -105,4 +125,34 @@ export function isInVector(item, vector){
     }
 
     return false
+}
+
+export function getValuesSum(vector){
+    let summation = 0
+
+    for(let item of vector){
+        summation += item
+    }
+
+    return summation
+}
+
+export function getValueAverage(vector){
+    return getValuesSum(vector) / getVectorSize(vector)
+}
+
+export function addItem(item, vector){
+    return addToVector(item, vector)
+}
+
+export function getPositiveValues(vector){
+    const newVector = []
+
+    for(let item of vector){
+        if(isPositive(item)){
+            newVector.push(item)
+        }
+    }
+
+    return newVector
 }

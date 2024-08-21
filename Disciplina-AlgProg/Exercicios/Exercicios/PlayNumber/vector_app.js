@@ -1,5 +1,5 @@
 import { awaitEnter, divideLines, getNumber, getPositiveNumber, showTitle } from './utils.js'
-import { generateVector, getVectorSize, showOptions, getLargestNumber, getSmallestNumber, showItens, isInVector } from './vector_functions.js'
+import { generateVector, getVectorSize, showOptions, getLargestNumber, getSmallestNumber, showItens, isInVector, getLargestIndex, getSmallestIndex, getValuesSum, getValueAverage, addItem } from './vector_functions.js'
 
 function getMainOptions(){
     const options = [
@@ -40,24 +40,30 @@ function main(){
                 decision = getNumber()
             }
             
-            divideLines()
-            const length = getPositiveNumber('Digite o tamanho do vetor: ')
-            const minimum = getPositiveNumber('Agora digite o valor minimo para um item do vetor: ')
-            let maximum = getPositiveNumber('Agora digite o valor maximo para um item do vetor: ')
-            
-            while(maximum < minimum){
-                console.log('\nO valor máximo deve ser maior que o valor mínimo!')
-                maximum = getPositiveNumber('Digite o valor maximo para um item do vetor: ')
-            }
-
-            if(decision == 1){
+            if(decision != 0){
+                divideLines()
+                const length = getPositiveNumber('Digite o tamanho do vetor: ')
+                const minimum = getPositiveNumber('Agora digite o valor minimo para um item do vetor: ')
+                let maximum = getPositiveNumber('Agora digite o valor maximo para um item do vetor: ')
                 
+                while(maximum < minimum){
+                    console.log('\nO valor máximo deve ser maior que o valor mínimo!')
+                    maximum = getPositiveNumber('Digite o valor maximo para um item do vetor: ')
+                }
+    
+                if(decision == 1){
+                    for(let index = 0; index < length; index++){
+                        const number = getNumber('Digite o numero a ser adicionado: ')
+                        vector = addItem(number, vector)
+                    }
+                }
+                if(decision == 2){
+                    vector =  generateVector(length, minimum, maximum)
+                    console.log(`\nSeu vetor agora é [${vector}]!`)
+                    awaitEnter()
+                }
             }
-            if(decision == 2){
-                vector =  generateVector(length, minimum, maximum)
-                console.log(`\nSeu vetor agora é [${vector}]!`)
-                awaitEnter()
-            }
+            
 
         }
 
@@ -99,13 +105,48 @@ function main(){
             showTitle('Quantidade de itens no vetor')
             let vectorSize = getVectorSize(vector)
             console.log(`Seu vetor tem ${vectorSize} itens!`)
+
             awaitEnter()
         }
 
         else if(option == 5){
-            let largestItem = getLargestNumber()
-            let smallest = getSmallestNumber()
-            
+            showTitle('Maior e Menor Valor')
+
+            if(getVectorSize(vector) == 0){
+                console.log('Seu vetor não tem itens!')
+            }
+            else{
+                const largestItem = getLargestNumber(vector)
+                const largestIndex = getLargestIndex(vector)
+                const smallest = getSmallestNumber(vector)
+                const smallestIndex = getSmallestIndex(vector)
+    
+                console.log(`O maior item do seu vetor é ${largestItem}, na ${largestIndex+1}º posição`)
+                console.log(`Já o menor item do seu vetor é ${smallest}, na ${smallestIndex+1}º posição`)
+            }
+
+            awaitEnter()
+        }
+        else if(option == 6){
+            showTitle('Somatório dos valores do vetor')
+
+            const summation = getValuesSum(vector)
+            console.log(`A soma dos valores do seu vetor é ${summation}`)
+
+            awaitEnter()
+        }
+        else if(option == 7){
+            showTitle('Média dos valores do seu vetor')
+
+            let average = getVectorSize(vector) == 0 ? 0 : getValueAverage(vector) 
+            console.log(`A média dos valores do seu vetor é ${average}!`)
+
+            awaitEnter()
+        }
+        else if(option == 8){
+            showTitle('Valores positivos do seu vetor')
+
+            positiveVector
 
             awaitEnter()
         }
