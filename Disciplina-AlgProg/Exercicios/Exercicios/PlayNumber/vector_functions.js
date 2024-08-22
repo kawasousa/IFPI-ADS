@@ -1,13 +1,13 @@
-import { getRandomNumber, getNumber } from "./utils.js";
+import { getRandomNumberInRange, getNumber, awaitEnter } from "./utils.js";
 import { addToVector, isPositive } from "./vector_utils.js";
 
 export function generateVector(length, minimum, maximum){
     const vector = []
     for(let index = 0; index < length; index++){
-        let number = getRandomNumber()
+        let number = getRandomNumberInRange(minimum, maximum)
 
         while(number < minimum || number > maximum){
-            number = getRandomNumber()
+            number = getRandomNumberInRange(minimum, maximum)
         }
         vector.push(number)
     }
@@ -28,7 +28,8 @@ export function showOptions(vector, lastItemName){
 }
 
 export function getVectorSize(vector){
-    return vector.length
+    const len = vector.length
+    return len
 }
 
 //Return the largest number in received vector
@@ -90,16 +91,13 @@ export function getSmallestIndex(vector){
 }
 
 //Show the itens of the received vector
-export function showItens(vector){
-    console.clear()
-    console.log('------- Itens do Vetor -------')
-    
-    if(vector.length == 0){
+export function showItens(vector, text = 'Os itens da sua cestinha são '){
+    if(getVectorSize(vector) == 0){
         console.log('Seu vetor está vazio!')
         return
     }
 
-    let phrase = 'Os itens do seu vetor são '
+    let phrase = text
     let lastIndex = vector.length-1
 
     for(let index = 0; index < vector.length; index++){
@@ -138,7 +136,8 @@ export function getValuesSum(vector){
 }
 
 export function getValueAverage(vector){
-    return getValuesSum(vector) / getVectorSize(vector)
+    const average = getValuesSum(vector) / getVectorSize(vector) 
+    return average.toFixed(2)
 }
 
 export function addItem(item, vector){
@@ -155,4 +154,33 @@ export function getPositiveValues(vector){
     }
 
     return newVector
+}
+
+export function getNegativeValues(vector){
+    const newVector = []
+
+    for(let item of vector){
+        if(!isPositive(item)){
+            newVector.push(item)
+        }
+    }
+
+    return newVector
+}
+
+export function getVectorParameters(){
+    const parameters = []
+    
+    const length = getPositiveNumber('Digite o tamanho do vetor: ')
+    const minimum = getPositiveNumber('Agora digite o valor minimo para um item do vetor: ')
+    let maximum = getPositiveNumber('Agora digite o valor maximo para um item do vetor: ')
+    
+    while(maximum < minimum){
+        console.log('\nO valor máximo deve ser maior que o valor mínimo!')
+        maximum = getPositiveNumber('Digite o valor maximo para um item do vetor: ')
+    }
+
+    parameters.push(length, minimum, maximum)
+
+    return parameters
 }

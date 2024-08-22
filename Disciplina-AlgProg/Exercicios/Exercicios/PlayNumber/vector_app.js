@@ -1,5 +1,10 @@
+import { getVectorByArchive } from './file_utils.js'
 import { awaitEnter, divideLines, getNumber, getPositiveNumber, showTitle } from './utils.js'
-import { generateVector, getVectorSize, showOptions, getLargestNumber, getSmallestNumber, showItens, isInVector, getLargestIndex, getSmallestIndex, getValuesSum, getValueAverage, addItem } from './vector_functions.js'
+import { generateVector, getVectorSize, showOptions, getLargestNumber, getSmallestNumber, showItens, isInVector, getLargestIndex,
+         getSmallestIndex, getValuesSum, getValueAverage, addItem, getPositiveValues,
+         getVectorParameters, getNegativeValues} from './vector_functions.js'
+import { removeFromVector } from './vector_utils.js'
+
 
 function getMainOptions(){
     const options = [
@@ -9,7 +14,7 @@ function getMainOptions(){
         'Atualizar todos os valores por uma regra', 'Adicionar novos valores', 'Remover itens por valor exato', 'Remover Itens por Posição',
         'Editar valor específico por posição','Salvar valores em arquivo'
     ]
-    showTitle(`Aplicativo dos Vetores`)
+    showTitle(`Aplicativo das Cestinhas`)
 
     showOptions(options, 'Sair')
 
@@ -22,8 +27,8 @@ function main(){
     
     while(option != 0){
         if(option === 1){
-            const decisions = ['Criar vetor manualmente', 'Gerar vetor com numeros aleatorios']
-            const decisionIndexs = [0,1,2]
+            const decisions = ['Criar um vetor manualmente', 'Gerar vetor com numeros aleatorios', 'Carregar vetor de um arquivo']
+            const decisionIndexs = [0,1,2,3]
             
 
             showTitle(`Deseja gerar numeros aleatórios ou iniciar manualmente?`)
@@ -42,32 +47,42 @@ function main(){
             
             if(decision != 0){
                 divideLines()
-                const length = getPositiveNumber('Digite o tamanho do vetor: ')
-                const minimum = getPositiveNumber('Agora digite o valor minimo para um item do vetor: ')
-                let maximum = getPositiveNumber('Agora digite o valor maximo para um item do vetor: ')
-                
-                while(maximum < minimum){
-                    console.log('\nO valor máximo deve ser maior que o valor mínimo!')
-                    maximum = getPositiveNumber('Digite o valor maximo para um item do vetor: ')
-                }
     
                 if(decision == 1){
+                    const length = getVectorParameters()[0]
+                    const minimum = getVectorParameters()[1]
+                    const maximum = getVectorParameters()[2]
+
                     for(let index = 0; index < length; index++){
-                        const number = getNumber('Digite o numero a ser adicionado: ')
+                        let number = getNumber('Digite o numero a ser adicionado: ')
+                        while(number > maximum || number < minimum){
+                            console.log('O número está fora do alcance definido!')
+                            number = getNumber('Digite o numero a ser adicionado: ')
+                        }
+                        
                         vector = addItem(number, vector)
                     }
                 }
                 if(decision == 2){
+                    const length = getVectorParameters()[0]
+                    const minimum = getVectorParameters()[1]
+                    const maximum = getVectorParameters()[2]
+
                     vector =  generateVector(length, minimum, maximum)
                     console.log(`\nSeu vetor agora é [${vector}]!`)
                     awaitEnter()
                 }
+                if(decision == 3){
+                    vector = getVectorByArchive('myVector.txt')
+                    console.log(`Seu vetor foi atualizado!`)
+                    awaitEnter()
+                }
             }
             
-
         }
 
         else if(option == 2){
+            showTitle('Itens da sua Cestinha')
             showItens(vector)
             awaitEnter()
         }
@@ -93,11 +108,11 @@ function main(){
 
             if(decision == 1){
                 vector = []
-    
 
-                showTitle('Seu vetor foi resetado!')
-                console.log('vetor = []')
-                awaitEnter()
+                showTitle('Seu vetor foi resetado!')                
+                awaitEnter('Pressione enter para definir um novo vetor.')
+                option = 1
+                continue
             }
         }
 
@@ -144,10 +159,44 @@ function main(){
             awaitEnter()
         }
         else if(option == 8){
-            showTitle('Valores positivos do seu vetor')
+            showTitle('Valores \x1b[34mPositivos\x1b[0m da sua cestinha')
 
-            positiveVector
+            let positiveVector = getPositiveValues(vector)
+            showItens(positiveVector, 'Os itens maiores que zero são ')
 
+            awaitEnter()
+        }
+
+        else if(option == 9){
+            showTitle('Valores \x1b[31mNegativos\x1b[0m da sua cestinha')
+
+            let negativeVector = getNegativeValues(vector)
+            showItens(negativeVector, 'Os itens menores que zero são ')
+
+            awaitEnter()
+        }
+
+        else if(option == 10){
+
+        }
+
+        else if(option == 11){
+            showTitle('Adicionar item à cestinha')
+            const decisions = [vector]
+            showOptions(vector, 'Voltar')
+
+            awaitEnter()
+        }
+
+        else if(option == 12){
+            showTitle('Remover item da cestinha')
+            showItens(vector)
+            const removedNumber = getNumber('\nDigite o valor que deseja remover: ')
+
+            vector = removeFromVector(removedNumber, vector)
+
+            divideLines()
+            console.log(`${removedNumber} foi removido da sua cestinha!`)
             awaitEnter()
         }
 

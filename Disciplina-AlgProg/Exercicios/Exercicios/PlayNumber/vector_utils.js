@@ -1,3 +1,5 @@
+import { getVectorSize, isInVector } from "./vector_functions.js"
+
 //Return a array with the itens changed based on criterion
 export function mapear(colection, criterion){
     let newList = []
@@ -60,3 +62,22 @@ export function removeFromVector(item, vector){
 export function isPositive(item){
     return item >= 0
 }
+
+export function stringToArray(text = '[]'){
+    const vector = []
+
+    let numberAsString = ''
+    for(const item of text){
+        if(item == ','){
+            const number = Number(numberAsString)
+            addToVector(number, vector)
+            numberAsString = ''
+            continue
+        }
+
+        numberAsString += item
+    }
+
+    return vector
+}
+

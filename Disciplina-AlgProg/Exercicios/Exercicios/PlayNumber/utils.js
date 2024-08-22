@@ -1,4 +1,5 @@
 import { question } from "readline-sync";
+import { stringToArray } from "./vector_utils.js";
 
 export function getNumber(message = '----------\nDigite um numero da opcao: '){
     return Number(question(message))
@@ -37,8 +38,8 @@ export function getNumberInRange(min, max, message = `Digite um número entre ${
     return number
 }
 
-export function getRandomNumber(){
-    return Math.floor(Math.random() * 10)
+export function getRandomNumberInRange(min, max){
+    return Math.floor((Math.random() * (max-min) + min))
 }
 
 export function showTitle(text){
@@ -50,11 +51,15 @@ export function divideLines(){
     console.log('\n----------')
 }
 
-export function awaitEnter(){
+export function awaitEnter(message = 'Pressione ENTER para voltar ao Menu Principal.'){
     divideLines()
-    question('Pressione ENTER para voltar ao Menu Principal.')
+    question(message)
 }
 
 export function isNumberInRange(number, min, max){
     return number > min && number < max
+}
+
+export function getText(message = ''){
+    return question(message)
 }
