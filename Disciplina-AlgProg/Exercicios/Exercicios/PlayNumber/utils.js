@@ -2,11 +2,19 @@ import { question } from "readline-sync";
 import { stringToArray } from "./vector_utils.js";
 
 export function getNumber(message = '----------\nDigite um numero da opcao: '){
-    return Number(question(message))
+    let number = (question(`${message}\x1b[33m`))
+    console.log('\x1b[0m')
+    
+    while(number == ''){
+        console.log(`Digite um número para prosseguir`)
+        number = (question(`${message}\x1b[33m`))
+        console.log('\x1b[0m')
+    }
+    return Number(number)
 }
 
 export function getPositiveNumber(message = 'Digite um número positivo: '){
-    const number = Number(question(message))
+    const number = getNumber(message)
     
     if(number <= 0){
         console.log(`${number} não é um número positivo!`)
@@ -28,7 +36,7 @@ export function getNegativeNumber(message = 'Digite um número negativo: '){
 }
 
 export function getNumberInRange(min, max, message = `Digite um número entre ${min} e ${max}`){
-    number = Number(question(message))
+    number = getNumber(message)
     
     if(number < min || number > max){
         console.log(`${number} está fora do alcance definido!`)

@@ -81,3 +81,13 @@ export function stringToArray(text = '[]'){
     return vector
 }
 
+export function getIndexVector(vector){
+    const indexVector =  []
+
+    for(let index = 0; index <= getVectorSize(vector); index++){
+        indexVector.push(index)
+    }
+
+    return indexVector
+}
+

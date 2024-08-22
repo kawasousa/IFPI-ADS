@@ -1,4 +1,4 @@
-import { getRandomNumberInRange, getNumber, awaitEnter } from "./utils.js";
+import { getRandomNumberInRange, getNumber, awaitEnter, getPositiveNumber } from "./utils.js";
 import { addToVector, isPositive } from "./vector_utils.js";
 
 export function generateVector(length, minimum, maximum){
@@ -21,10 +21,10 @@ export function showOptions(vector, lastItemName){
 
         let extraSpace = Number(index+1 < 10)
 
-        console.log(`${' '.repeat(extraSpace)}${index+1} - ${option}`)
+        console.log(`[${'0'.repeat(extraSpace)}${index+1}] - ${option}`)
     }
 
-    console.log(`\n 0 - ${lastItemName}`)
+    console.log(`\n[0]  - ${lastItemName}`)
 }
 
 export function getVectorSize(vector){
