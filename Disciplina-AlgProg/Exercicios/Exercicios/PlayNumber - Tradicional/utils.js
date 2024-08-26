@@ -16,7 +16,7 @@ export function getNumber(message = '----------\nDigite um numero da opcao: '){
 export function getPositiveNumber(message = 'Digite um número positivo: '){
     const number = getNumber(message)
     
-    if(number <= 0){
+    if(number < 0){
         console.log(`${number} não é um número positivo!`)
         getPositiveNumber(message)
     }

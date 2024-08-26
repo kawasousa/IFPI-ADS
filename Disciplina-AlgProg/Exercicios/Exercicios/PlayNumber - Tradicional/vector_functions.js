@@ -1,5 +1,5 @@
 import { getRandomNumberInRange, getNumber, awaitEnter, getPositiveNumber } from "./utils.js";
-import { addToVector, isPositive } from "./vector_utils.js";
+import { addToVector, exponentiateValues, isPositive, multiplyValues } from "./vector_utils.js";
 
 export function generateVector(length, minimum, maximum){
     const vector = []
@@ -27,9 +27,8 @@ export function showOptions(vector, lastItemName){
     console.log(`\n[0]  - ${lastItemName}`)
 }
 
-export function getVectorSize(vector){
-    const len = vector.length
-    return len
+export function getVectorSize(vector = []){
+    return vector.length
 }
 
 //Return the largest number in received vector
@@ -172,8 +171,8 @@ export function getVectorParameters(){
     const parameters = []
     
     const length = getPositiveNumber('Digite o tamanho do vetor: ')
-    const minimum = getPositiveNumber('Agora digite o valor minimo para um item do vetor: ')
-    let maximum = getPositiveNumber('Agora digite o valor maximo para um item do vetor: ')
+    const minimum = getNumber('Agora digite o valor minimo para um item do vetor: ')
+    let maximum = getNumber('Agora digite o valor maximo para um item do vetor: ')
     
     while(maximum < minimum){
         console.log('\nO valor máximo deve ser maior que o valor mínimo!')
@@ -184,3 +183,22 @@ export function getVectorParameters(){
 
     return parameters
 }
+
+export function updateVectorValues(decision, vector){
+    if(decision == 0){return vector}
+
+    if(decision == 1){
+        const multiplier = getNumber('Por qual número você quer multiplicar os seus itens: ')
+        vector = multiplyValues(vector, multiplier)
+    }
+    else if(decision == 2){
+        const exponent = getNumber('Por que número você quer multiplicar os seus itens: ')
+        vector = exponentiateValues(vector, exponent)
+    }
+    else if(decision == 3){
+
+    }
+
+    return vector
+}
+

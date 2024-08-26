@@ -81,6 +81,16 @@ export function stringToArray(text = '[]'){
     return vector
 }
 
+export function arrayToString(vector){
+    let fileOut = ''
+    
+    for(let item of vector){
+        fileOut += item + ','
+    }
+
+    return fileOut
+}
+
 export function getIndexVector(vector){
     const indexVector =  []
 
@@ -91,3 +101,20 @@ export function getIndexVector(vector){
     return indexVector
 }
 
+export function multiplyValues(vector, multiplier){
+    const newVector = []
+    
+    for(let item of vector){
+        const multiplied
+    }
+
+    return vector
+}
+
+export function exponentiateValues(vector, exponent){
+    for(let item of vector){
+        item **= exponent
+    }
+
+    return vector
+}
