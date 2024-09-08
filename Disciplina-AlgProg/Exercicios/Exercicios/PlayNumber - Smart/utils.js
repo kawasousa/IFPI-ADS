@@ -14,11 +14,11 @@ export function getNumber(message = '----------\nDigite um numero da opcao: '){
 }
 
 export function getPositiveNumber(message = 'Digite um número positivo: '){
-    let number = getNumber(message)
+    const number = getNumber(message)
     
-    while(number < 0){
+    if(number < 0){
         console.log(`${number} não é um número positivo!`)
-        number = getNumber(message)
+        getPositiveNumber(message)
     }
     
     return number

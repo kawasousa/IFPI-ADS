@@ -1,5 +1,5 @@
 import { getRandomNumberInRange, getNumber, awaitEnter, getPositiveNumber } from "./utils.js";
-import { addToVector, exponentiateValues, isPositive, multiplyValues } from "./vector_utils.js";
+import { addToVector, exponentiateValues, isPositive, multiplyValues, toMap } from "./vector_utils.js";
 
 export function generateVector(length, minimum, maximum){
     const vector = []
@@ -23,7 +23,7 @@ export function showOptions(vector, lastItemName){
 
         console.log(`[${'0'.repeat(extraSpace)}${index+1}] - ${option}`)
     }
-
+    
     console.log(`\n[0]  - ${lastItemName}`)
 }
 
@@ -91,7 +91,7 @@ export function getSmallestIndex(vector){
 
 //Show the itens of the received vector
 export function showItens(vector, text = 'Os itens da sua cestinha são '){
-    if(getVectorSize(vector) == 0){
+    if(getVectorSize(vector) === 0){
         console.log('Seu vetor está vazio!')
         return
     }
@@ -139,10 +139,6 @@ export function getValueAverage(vector){
     return average.toFixed(2)
 }
 
-export function addItem(item, vector){
-    return addToVector(item, vector)
-}
-
 export function getPositiveValues(vector){
     const newVector = []
 
@@ -184,39 +180,33 @@ export function getVectorParameters(){
     return parameters
 }
 
-export function updateVectorValues(decision, vector){
-    if(decision == 0){return vector}
+export function updateVectorValues(option, vector){
+    const functions = {
+        1: ''
+    }
 
-    if(decision == 1){
-        const multiplier = getNumber('Por qual número você quer multiplicar os seus itens: ')
-        vector = multiplyValues(vector, multiplier)
-    }
-    else if(decision == 2){
-        const exponent = getNumber('Por que número você quer multiplicar os seus itens: ')
-        vector = exponentiateValues(vector, exponent)
-    }
-    else if(decision == 3){
-        const numerator = getNumber('Digite o numerador da fração: ')
-        const denominator = getNumber('Digite o denominador da fração: ')
-        const fraction = numerator / denominator
-
-        vector = multiplyValues(vector, fraction)
-    }
-    else if(decision == 4){
-        const minimum = getNumber('Digite o valor mínimo para o número: ')
-        const maximum = getNumber('Digite o valor máximo para o número: ')
-        const randomNumber = getRandomNumberInRange(minimum, maximum)
-        let newVector = []
-
-        for(let item of vector){
-           if(item > 0){
-            const newItem = randomNumber
-            newVector = addToVector(newItem, newVector)
-           } 
-        }
-        vector = newVector
-    }
+    vector = toMap(vector, functions[option])
 
     return vector
 }
 
+export function toFilter(vector, condition){
+    let newVector = []
+
+    for(const item of vector){
+        if(condition(item)){
+            newVector = addToVector(item, newVector)
+        }
+    }
+    return newVector
+}
+
+export function toReduce(vector, func, initial){
+    let result = 0
+
+    for(const item of vector){
+        result = func(result, item)
+    }
+
+    return result
+}

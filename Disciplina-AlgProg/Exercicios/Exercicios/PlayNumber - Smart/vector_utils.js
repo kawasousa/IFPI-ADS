@@ -119,3 +119,19 @@ export function exponentiateValues(vector, exponent){
 
     return vector
 }
+
+export function addItem(item, vector){
+    return addToVector(item, vector)
+}
+
+//Goes through a list and applies the same rule to each item
+export function toMap(vector, rule){
+    let newVector = []
+    
+    for(let item of vector){
+        const newItem = rule(item)
+        newVector = addToVector(newItem, newVector)
+    }
+
+    return newVector
+}
