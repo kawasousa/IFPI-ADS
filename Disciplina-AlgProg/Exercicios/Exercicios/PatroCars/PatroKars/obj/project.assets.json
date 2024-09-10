@@ -1,0 +1,140 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "NUlid/1.7.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/NUlid.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NUlid.dll": {}
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NUlid/1.7.2": {
+      "sha512": "34DfywdGJ1/DUcmCHMn72zW/NtZDkfsS1/wEjgrowrMRTeL6iPyPyjVqeIUK8QnhsFd/CWp2Pw1HeYLVeagYMg==",
+      "type": "package",
+      "path": "nulid/1.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/NUlid.dll",
+        "lib/netstandard2.0/nulid.xml",
+        "logo.png",
+        "nulid.1.7.2.nupkg.sha512",
+        "nulid.nuspec"
+      ]
+    },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "NUlid >= 1.7.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\kawas\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\kawas\\OneDrive\\Documents\\ADS\\Github\\Disciplina-AlgProg\\Exercicios\\Exercicios\\PatroCars\\PatroKars\\PatroKars.csproj",
+      "projectName": "PatroKars",
+      "projectPath": "C:\\Users\\kawas\\OneDrive\\Documents\\ADS\\Github\\Disciplina-AlgProg\\Exercicios\\Exercicios\\PatroCars\\PatroKars\\PatroKars.csproj",
+      "packagesPath": "C:\\Users\\kawas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kawas\\OneDrive\\Documents\\ADS\\Github\\Disciplina-AlgProg\\Exercicios\\Exercicios\\PatroCars\\PatroKars\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\kawas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "NUlid": {
+            "target": "Package",
+            "version": "[1.7.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
