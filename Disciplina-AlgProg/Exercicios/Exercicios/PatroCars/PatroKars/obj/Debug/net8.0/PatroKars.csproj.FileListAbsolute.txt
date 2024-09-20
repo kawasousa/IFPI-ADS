@@ -16,3 +16,4 @@ C:\Users\kawas\OneDrive\Documents\ADS\Github\Disciplina-AlgProg\Exercicios\Exerc
 C:\Users\kawas\OneDrive\Documents\ADS\Github\Disciplina-AlgProg\Exercicios\Exercicios\PatroCars\PatroKars\obj\Debug\net8.0\PatroKars.pdb
 C:\Users\kawas\OneDrive\Documents\ADS\Github\Disciplina-AlgProg\Exercicios\Exercicios\PatroCars\PatroKars\obj\Debug\net8.0\PatroKars.genruntimeconfig.cache
 C:\Users\kawas\OneDrive\Documents\ADS\Github\Disciplina-AlgProg\Exercicios\Exercicios\PatroCars\PatroKars\obj\Debug\net8.0\ref\PatroKars.dll
+C:\Users\kawas\OneDrive\Documents\ADS\Github\Disciplina-AlgProg\Exercicios\Exercicios\PatroCars\PatroKars\bin\Debug\net8.0\Newtonsoft.Json.dll

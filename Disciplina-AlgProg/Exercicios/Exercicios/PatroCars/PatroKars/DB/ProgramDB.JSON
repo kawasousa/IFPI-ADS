@@ -1,0 +1,82 @@
+{
+    "Automakers": [
+      {
+        "ID": "01HAA9DJYXW6RVKE0B9G5YQ7TN",
+        "name": "Ford",
+        "country": "EUA",
+        "year": 1903
+      },
+      {
+        "ID": "01HAA9DK0GBR4RCYGXGFBTEFFY",
+        "name": "Toyota",
+        "country": "Japao",
+        "year": 1937
+      },
+      {
+        "ID": "01HAA9DK11ZZMJ8V9BYA4KPYXH",
+        "name": "Volkswagen",
+        "country": "Alemanha",
+        "year": 1937
+      },
+      {
+        "ID": "01HAA9DK2GKV8F7BBZ6H20QTVT",
+        "name": "General Motors",
+        "country": "EUA",
+        "year": 1908
+      },
+      {
+        "ID": "01HAA9DK3TS5XFFNCTZQZ1Q9RV",
+        "name": "Honda",
+        "country": "Japao",
+        "year": 1948
+      },
+      {
+        "ID": "01HAA9DK54B6CN4VBXR5KFN1BT",
+        "name": "BMW",
+        "country": "Alemanha",
+        "year": 1916
+      },
+      {
+        "ID": "01HAA9DK6FNS3EF4KPDR6A0H9H",
+        "name": "Fiat",
+        "country": "Italia",
+        "year": 1899
+      },
+      {
+        "ID": "01HAA9DK78NVVQ0MX5T1WW7JP3",
+        "name": "Mercedes-Benz",
+        "country": "Alemanha",
+        "year": 1926
+      },
+      {
+        "ID": "01HAA9DK8TX59ZKHHBXJCF09M0",
+        "name": "Ferrari",
+        "country": "Italia",
+        "year": 1947
+      },
+      {
+        "ID": "01HAA9DK9K3T0ZJDG2Y2CY9NEJ",
+        "name": "Hyundai",
+        "country": "Coreia do Sul",
+        "year": 1967
+      },
+      {
+        "ID": "01HAA9DKA4HDEJ5ZQYDCG9DSN9",
+        "name": "Nissan",
+        "country": "Japao",
+        "year": 1933
+      },
+      {
+        "ID": "01HAA9DKBXRA7TV7KP1ZT45B3R",
+        "name": "Renault",
+        "country": "Franca",
+        "year": 1899
+      }
+    ],
+    "Models": [
+
+    ],
+    "Vehicle": [
+      
+    ]
+  }
