@@ -1,4 +1,5 @@
-﻿using PatroKars.Application;
+﻿using System.Data.Common;
+using PatroKars.App;
 
 namespace PatroKars
 {
@@ -10,14 +11,26 @@ namespace PatroKars
             Console.ForegroundColor = ConsoleColor.White;
             List<string> options = new()
             {
-                "Criar nova Montadora", "Listar montadoras", "Atualizar Montadora",
-                "Remover Montadora","Carregar de Arquivo","Salvar em Arquivo"
+                "Adicionar Montadora", "Listar Montadoras", "Atualizar Montadora", "Remover Montadora",
+                "Adicionar Modelo", "Listar Modelos", "Atualizar Modelo", "Remover Modelos",
+                "Adicionar Veiculos", "Listar Veiculos", "Atualizar Veiculo", "Remover Veiculos",
+                "", "Carregar de Arquivo","Salvar em Arquivo"
             };
-            List<Dictionary<string,object>> automakerList = new List<Dictionary<string,object>>();
+            Dictionary<string, string> dataNames = new()
+            {
+                { "automaker", "Montadoras" },
+                { "model", "Modelos" },
+                { "vehicle", "Veiculos" },
+            };
+
+            Dictionary<string, List<Dictionary<string,object>>> DBList = new();
+            List<Dictionary<string,object>> automakerList = new();
+            List<Dictionary<string,object>> modelList = new();
+            List<Dictionary<string,object>> vehicleList = new();
 
             while(true)
             {
-                Ui.ShowTitle("PatroKars");
+                Ui.ShowTitle("Bem Vindo a PatroKars!");
                 Ui.ShowOptions(options, "Sair");
                 Ui.DivideLines();
 
@@ -34,7 +47,14 @@ namespace PatroKars
                     }
                     else
                     {
-                        option = 7;
+                        Ui.ShowTitle("Salvar e Sair");
+                        
+                        Dictionary<string, List<Dictionary<string,object>>> DBtoSave = new();
+                        DBtoSave.Add("Automakers", automakerList);
+                        DBtoSave.Add("Models", modelList);
+                        DBtoSave.Add("Vehicles", vehicleList);
+                        Functions.SaveUpdates(DBtoSave);
+                        break;
                     }
                 }
                 
@@ -44,28 +64,63 @@ namespace PatroKars
 
                 if(option == 1)//Create Automaker
                 { 
-                    Dictionary<string,object> automaker = Functions.CreateAutomaker();
-                    automakerList.Add(automaker);
+                    Functions.CreateList(dataNames["automaker"], automakerList);
                 }
                 else if(option == 2)//List all Automakers
                 {
-                    Functions.ListAutomakers(automakerList);
+                    Functions.ShowList(automakerList, dataNames["automaker"]);
                 }
                 else if(option == 3)//Update a automaker info
                 {
-                    Functions.UpdateAutomaker(automakerList);
+                    Functions.UpdateList(automakerList, dataNames["automaker"]);
                 }
                 else if(option == 4)//Remove a automaker
                 {
-                    Functions.RemoveAutomaker(automakerList);
+                    Functions.RemoveList(automakerList, dataNames["automaker"]);
                 }
-                else if(option == 5)//Load saved automakers
+                else if (option == 5)//Create Model
                 {
-                    automakerList = Functions.LoadFromFile(automakerList);
+                    Functions.CreateList(dataNames["model"], modelList, automakerList);
+                }
+                else if(option == 6)//Show registered models
+                {
+                    Functions.ShowList(modelList, dataNames["model"]);
+                }
+                else if(option == 8)//Remove a model
+                {
+                    Functions.RemoveList(modelList, dataNames["model"]);
+                }
+                else if(option == 9)//Create vehicles
+                {
+                    Functions.CreateList(dataNames["vehicle"], vehicleList, automakerList, modelList);
+                }
+                else if(option == 10)//List registered vehicles
+                {
+                    Functions.ShowList(vehicleList, dataNames["vehicle"]);
+                }
+                else if(option == 11)//Update a vehicle
+                {
+                    // Functions.up
+                }
+                else if(option == 12)//Rempve a vehicle
+                {
+                    Functions.RemoveList(vehicleList, dataNames["vehicle"]);
+                }
+                else if(option == 14)//Load saved automakers
+                {
+                    DBList = Functions.LoadFromFile(DBList);
 
-                }else if (option == 6)//Save automakers in file
+                    automakerList = DBList["Automakers"];
+                    modelList = DBList["Models"];
+                    vehicleList = DBList["Vehicles"];
+
+                }else if (option == 15)//Save automakers in file
                 {
-                    Functions.SaveUpdates(automakerList);
+                    Dictionary<string, List<Dictionary<string,object>>> DBtoSave = new();
+                    DBtoSave.Add("Automakers", automakerList);
+                    DBtoSave.Add("Models", modelList);
+                    DBtoSave.Add("Vehicles", vehicleList);
+                    Functions.SaveUpdates(DBtoSave);
                 }
 
                 Io.AwaitEnter();

@@ -1,4 +1,4 @@
-namespace PatroKars.Application
+namespace PatroKars.App
 {
     public static class Ui
     {
@@ -6,10 +6,22 @@ namespace PatroKars.Application
         {
             for(int index = 0; index < options.Count; index++)
             {
-                string option = options[index];
-                Console.WriteLine($"[{index+1}] - {option}");
+                if(!options[index].Equals(""))
+                {
+                    string extraZero = index < 9 ? "0" : "";
+
+                    string option = options[index];
+                    Console.WriteLine($"[{extraZero}{index+1}] - {option}");
+                }
+                else
+                {
+                    Console.WriteLine();
+                }
             }
-            Console.WriteLine($"\n[0] - {lastItem}");
+            if(lastItem != "")
+            {
+                Console.WriteLine($"\n[00] - {lastItem}");
+            }
         }
 
         public static void ShowTitle(string title)
