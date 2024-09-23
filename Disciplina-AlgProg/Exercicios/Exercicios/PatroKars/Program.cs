@@ -76,7 +76,7 @@ namespace PatroKars
                 }
                 else if(option == 4)//Remove a automaker
                 {
-                    Functions.RemoveList(automakerList, dataNames["automaker"]);
+                    Functions.RemoveList(automakerList, dataNames["automaker"], vehicleList, modelList);
                 }
                 else if (option == 5)//Create Model
                 {
@@ -84,11 +84,15 @@ namespace PatroKars
                 }
                 else if(option == 6)//Show registered models
                 {
-                    Functions.ShowList(modelList, dataNames["model"]);
+                    Functions.ShowList(modelList, dataNames["model"], automakerList);
+                }
+                else if(option == 7)
+                {
+                    Functions.UpdateList(modelList, dataNames["model"]);
                 }
                 else if(option == 8)//Remove a model
                 {
-                    Functions.RemoveList(modelList, dataNames["model"]);
+                    Functions.RemoveList(modelList, dataNames["model"], vehicleList);
                 }
                 else if(option == 9)//Create vehicles
                 {
@@ -96,11 +100,11 @@ namespace PatroKars
                 }
                 else if(option == 10)//List registered vehicles
                 {
-                    Functions.ShowList(vehicleList, dataNames["vehicle"]);
+                    Functions.ShowList(vehicleList, dataNames["vehicle"], automakerList, modelList);
                 }
                 else if(option == 11)//Update a vehicle
                 {
-                    // Functions.up
+                    Functions.UpdateList(vehicleList, dataNames["vehicle"]);
                 }
                 else if(option == 12)//Rempve a vehicle
                 {

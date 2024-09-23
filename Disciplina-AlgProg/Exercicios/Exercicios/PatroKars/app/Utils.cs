@@ -104,7 +104,7 @@ namespace PatroKars.App
             List<Dictionary<string,object>> newList = new();
             foreach(Dictionary<string,object> dict in list)
             {
-                if(criterion(dict[key].ToString()))
+                if(criterion((string)dict[key]))
                 {
                     newList.Add(dict);
                 }
@@ -117,7 +117,7 @@ namespace PatroKars.App
         {
             for(int i = 0; i < list.Count; i++)
             {
-                if(list[i][key] == value)
+                if(list[i][key].Equals(value))
                 {
                     list.RemoveAt(i);
                 }
@@ -188,7 +188,7 @@ namespace PatroKars.App
                 {"model", "Modelo"},
                 {"name", "Nome"},
                 {"color", "Cor"},
-                {"year", "Ano"},
+                {"year", "Ano do Veiculo"},
                 {"modelYear", "Ano do Modelo"},
                 {"price", "Valor"},
                 {"plate", "Placa"},

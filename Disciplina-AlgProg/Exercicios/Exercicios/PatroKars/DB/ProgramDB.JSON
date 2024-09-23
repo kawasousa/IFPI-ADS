@@ -78,10 +78,10 @@
       "ID": "01J8C3S15A48XBFDE450T5YF4S",
       "automakerID": "01HAA9DK11ZZMJ8V9BYA4KPYXH",
       "name": "GTI 2024",
-      "price": "220000",
-      "Engine": "2.0",
-      "Turbo": "sim",
-      "Automatic": "nao"
+      "price": 220000,
+      "Engine": 2.0,
+      "Turbo": false,
+      "Automatic": false
     }
   ],
   "Vehicles": [
@@ -91,9 +91,9 @@
       "modelID": "01J8C3S15A48XBFDE450T5YF4S",
       "sold": false,
       "name": "Golf",
-      "color": "Preto",
-      "year": "1997",
-      "price": "250000",
+      "color": "Prata",
+      "year": 1998,
+      "price": 250000,
       "plate": "BRI540E"
     }
   ]

@@ -27,7 +27,7 @@ namespace PatroKars.App
                 List<string> options = new();
                 foreach(Dictionary<string,object> dict in automakersList)
                 {
-                    options.Add(dict["name"].ToString());
+                    options.Add((string)dict["name"]);
                 }
 
                 Console.WriteLine("Montadora");
@@ -39,7 +39,7 @@ namespace PatroKars.App
                 if(automakerIndex == 0){return;}
                 Ui.DivideLines();
 
-                string automakerID = automakersList[automakerIndex-1]["ID"].ToString();
+                string automakerID = (string)automakersList[automakerIndex-1]["ID"];
 
                 newDict.Add("automakerID", automakerID);
             }
@@ -49,7 +49,7 @@ namespace PatroKars.App
                 List<string> options = new();
                 foreach(Dictionary<string,object> dict in modelsList)
                 {
-                    options.Add(dict["name"].ToString());
+                    options.Add((string)dict["name"]);
                 }
                 Ui.ShowTitle("Adicionar Veiculos");
                 Console.WriteLine("Modelo");
@@ -58,7 +58,7 @@ namespace PatroKars.App
                 Ui.DivideLines();
 
                 int modelIndex = Io.GetNumber("Digite o numero do modelo: ");
-                string modelID = modelsList[modelIndex-1]["ID"].ToString();
+                string modelID = (string)modelsList[modelIndex-1]["ID"];
 
                 newDict.Add("modelID", modelID);
                 newDict.Add("sold", false);
@@ -77,7 +77,7 @@ namespace PatroKars.App
             targetList.Add(newDict);
         }
 
-        public static void ShowList(List<Dictionary<string,object>> list, string listName, List<Dictionary<string,object>> modelsList = null, List<Dictionary<string,object>> automakersList = null)
+        public static void ShowList(List<Dictionary<string,object>> list, string listName, List<Dictionary<string,object>> automakersList = null, List<Dictionary<string,object>> modelsList = null)
         {
             automakersList ??= new();
             modelsList ??= new();
@@ -106,6 +106,7 @@ namespace PatroKars.App
             if(option == 0){return;}
             Ui.DivideLines();
 
+            //Show list details
             if(option == 1)
             {
                 Ui.ShowTitle($"Detalhar {listName}");
@@ -114,17 +115,27 @@ namespace PatroKars.App
                     Console.WriteLine($"Nome: {dict["name"]}");
                     foreach(string key in dict.Keys)
                     {
-                        Console.WriteLine(key);
-                        if(!key.Equals("name"))
+                        string translatedKey = "";
+                        if(Io.GetTranslatedKeys(listName).ContainsKey(key))
                         {
-                            string translatedKey = Io.GetTranslatedKeys(listName)[key];
+                            translatedKey = Io.GetTranslatedKeys(listName)[key];
+                        }
+                        if(!key.Equals("name") && !key.Equals("ID"))
+                        {
                             if(key.Equals("modelID"))
                             {
-                                translatedKey = FilterList(modelsList, );
+                                Dictionary<string,object> model = Io.FilterBy(modelsList, "ID", (x)=>{return x.Equals(dict["modelID"]);})[0];
+                                Console.WriteLine($"    Modelo: {model["name"]}");
+                            }
+                            else if(key.Equals("automakerID"))
+                            {
+                                Dictionary<string,object> automaker = Io.FilterBy(automakersList, "ID", (x)=>{return x.Equals(dict["automakerID"]);})[0];
+                                Console.WriteLine($"    Montadora: {automaker["name"]}");
+                            }
+                            else
+                            {
                                 Console.WriteLine($"    {translatedKey}: {dict[key]}");
                             }
-
-                            Console.WriteLine($"    {translatedKey}: {dict[key]}");
                         }
                     }
                     if(dict != list[^1])
@@ -170,9 +181,10 @@ namespace PatroKars.App
             }
         }
 
-        public static List<Dictionary<string,object>> FilterList(List<Dictionary<string,object>> list, List<string> filterKey = null, Dictionary<string,string> values)
+        public static List<Dictionary<string,object>> FilterList(List<Dictionary<string,object>> list, List<string> filterKey = null, Dictionary<string,string> values = null)
         {
             filterKey ??= new();
+            values ??= new();
 
             Ui.ShowTitle("Filtrar por");
             Ui.ShowOptions(values.Values.ToList());
@@ -181,11 +193,21 @@ namespace PatroKars.App
             int infoIndex = Io.GetNumber();
             if(infoIndex == 0){return list;}
             
-            string infoValue = values.Keys.ToList()[infoIndex-1].ToLower();
-            string infoKey = values.Values.ToList()[infoIndex-1].ToLower();
+            string infoValue = null;
+            if(values.Count > 0)
+            {
+                infoValue = values.Keys.ToList()[infoIndex-1].ToLower();
+                string infoKey = values.Values.ToList()[infoIndex-1].ToLower();
+                filterKey.Add(Io.GetString($"Digite o {infoKey}: "));
+                filterKey.Add(infoKey);
+            }
 
-            filterKey.Add(Io.GetString($"Digite o {infoKey}: "));
-            filterKey.Add(infoKey);
+            if(infoValue == "automaker")
+            {
+                // Dictionary<string,object> automaker = Io.FilterBy(automakersList, "ID", (x)=>{return x.Equals(dict["automakerID"]);})[0];
+                // infoValue = (string)automaker["name"];
+            }
+
             return Io.FilterBy(list, infoValue, x => Io.StringContains(filterKey[0], x));
         }
 
@@ -193,7 +215,7 @@ namespace PatroKars.App
         {
             if (list.Count == 0)
             {
-                Console.WriteLine($"Cadastre {listName} antes de atualiza-las!");
+                Console.WriteLine($"Cadastre {listName.ToLower()} antes de atualiza-las!");
                 return;
             }
 
@@ -204,11 +226,12 @@ namespace PatroKars.App
             //Choose the automaker to be updated
             int listIndex = Io.GetNumber($"Digite numero da {listName}: ");
             if(listIndex == 0){return;}
-            Dictionary<string,object> automaker = list[listIndex-1];
+            Dictionary<string,object> dictToUpdate = list[listIndex-1];
 
             //List automaker infos to be updated
-            Ui.ShowTitle("Editar " + automaker["name"].ToString());
-            List<string> infoOptions = new() {"Nome","Pais","Ano"}; 
+            Ui.ShowTitle("Editar " + dictToUpdate["name"].ToString());
+            List<string> infoOptions = Io.GetTranslatedKeys(listName).Values.ToList(); 
+
             Ui.ShowOptions(infoOptions, "Cancelar");
             Ui.DivideLines();
 
@@ -219,32 +242,54 @@ namespace PatroKars.App
             //Select key based on received option
             string key = "";
             int i = 0;
-            foreach(string dictKey in automaker.Keys)
+            foreach(string dictKey in dictToUpdate.Keys)
             {
-                key = dictKey;
-                if(i == keyIndex){break;}
-                i++;
+                if(!dictKey.Contains("ID"))
+                {
+                    if(i == keyIndex-1){break;}
+                    key = dictKey;
+                    i++;
+                }
+            }
+
+            if(key.Equals(""))
+            {
+                Console.WriteLine("Funcao em desenvolvimento!");
+                return;
             }
 
             //Get new info to update automaker
-            Ui.ShowTitle($"Editar {infoOptions[keyIndex-1]} de {automaker["name"]}");
-            Console.WriteLine($"{infoOptions[keyIndex-1]} atual: {automaker[key]}.");
-            Ui.DivideLines();
-            string newValue = Io.GetString($"Digite o novo {infoOptions[keyIndex-1].ToLower()}: ");
+            Ui.ShowTitle($"Editar {infoOptions[keyIndex-1]} de {dictToUpdate["name"]}");
 
-            //Transform new value based on current value type
-            if(automaker[key].GetType() == typeof(System.Int64))
+            if(!infoOptions[keyIndex-1].Equals("Montadora") && !infoOptions[keyIndex-1].Equals("Modelo"))
             {
-                int intNewValue = int.Parse(newValue);
-                list[listIndex-1][key] = intNewValue;
+                Console.WriteLine($"{infoOptions[keyIndex-1]} atual: {dictToUpdate[key]}.");
+                Ui.DivideLines();
+                string newValue = Io.GetString($"Digite o novo {infoOptions[keyIndex-1].ToLower()}: ");
+
+                //Transform new value based on current value type
+                if(dictToUpdate[key].GetType().Equals(typeof(string)))
+                {
+                    list[listIndex-1][key] = newValue;
+                }
+                if(dictToUpdate[key].GetType().Equals(typeof(System.Int64)))
+                {
+                    int intNewValue = int.Parse(newValue);
+                    list[listIndex-1][key] = intNewValue;
+                }
+                else if(dictToUpdate[key].GetType().Equals(typeof(bool)))
+                {
+                    
+                }
+                Ui.DivideLines();
+                Console.WriteLine($"O {infoOptions[keyIndex-1].ToLower()} de {dictToUpdate["name"]} foi atualizado para {newValue}!");
             }
-            else
-            {
-                list[listIndex-1][key] = newValue;
+            else{
+                Console.WriteLine("Funcao em Desenvolvimento!");
+                return;
             }
 
-            Ui.DivideLines();
-            Console.WriteLine($"O {infoOptions[keyIndex-1].ToLower()} da montadora foi atualizado para {newValue}!");
+
         }
 
         public static void RemoveList(List<Dictionary<string,object>> list, string listName, List<Dictionary<string,object>> vehiclesList = null, List<Dictionary<string,object>> modelsList = null)
@@ -283,13 +328,13 @@ namespace PatroKars.App
 
                     if(listName.Equals("Modelos"))
                     {
-                        Io.RemoveBy(vehiclesList, "ID", list[listIndex]["modelID"].ToString());
+                        Io.RemoveBy(vehiclesList, "modelID", (string)list[listIndex]["ID"]);
                     }
 
-                    if(listName == "Montadoras")
+                    if(listName.Equals("Montadoras"))
                     {
-                        Io.RemoveBy(modelsList, "ID", list[listIndex]["ID"].ToString());
-                        Io.RemoveBy(vehiclesList, "ID", list[listIndex]["modelID"].ToString());
+                        Io.RemoveBy(modelsList, "automakerID", (string)list[listIndex]["ID"]);
+                        Io.RemoveBy(vehiclesList, "automakerID", (string)list[listIndex]["ID"]);
                     }
 
                     list.RemoveAt(listIndex);
