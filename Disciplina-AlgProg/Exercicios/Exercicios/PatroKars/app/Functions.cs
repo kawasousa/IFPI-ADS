@@ -330,8 +330,7 @@ namespace PatroKars.App
                     {
                         Io.RemoveBy(vehiclesList, "modelID", (string)list[listIndex]["ID"]);
                     }
-
-                    if(listName.Equals("Montadoras"))
+                    else if(listName.Equals("Montadoras"))
                     {
                         Io.RemoveBy(modelsList, "automakerID", (string)list[listIndex]["ID"]);
                         Io.RemoveBy(vehiclesList, "automakerID", (string)list[listIndex]["ID"]);
