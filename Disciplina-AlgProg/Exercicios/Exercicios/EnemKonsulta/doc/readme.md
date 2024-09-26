@@ -2,24 +2,24 @@
 ---
 ## Funções
 ### Genéricas
-#### *Filter*
+#### *Filter*:
 Busca por itens da lista que atendam a um critério específico.
 A função recebe como parâmetros a lista com os itens a ser filtrados e uma função (recebe dois itens e retorna verdadeiro ou falso) usada como
 critério de avaliação que vai definir se o item analisado deve ou não estar na lista atual.
-#### *Reduce*
+#### *Reduce*:
 Busca por um valor específico na lista
-#### *Quick Sort*
+#### *Quick Sort*:
 Ordenamento da lista baseado em um dado
 ### Do Projeto
 #### Show Ranked List
+Mostra os N primeiros itens de uma lista
 #### Get Number
-	Mostra os N primeiros itens de uma lista
+Imprime uma mensagem no console e recebe um valor inteiro
 #### Get String
-	Imprime uma mensagem no console e recebe um valor inteiro
+Imprime uma mensagem no console e recebe um valor como frase
 #### Show Title
-	Imprime uma mensagem no console e recebe um valor como frase
-	Mostra o título da página atual baseado no texto passado como parâmetro
-
+###### Mostra o título da página atual baseado no texto passado como parâmetro
+---
 ## Consultas
 - [ ] Top N escolas a nível nacional baseado em média
 - [ ] Top N escolas a nível nacional baseado em área do conhecimento
