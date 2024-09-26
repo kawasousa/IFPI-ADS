@@ -1,5 +1,4 @@
 # Konsulta Enem
----
 ## Funções
 ### Genéricas
 #### *Filter*:
