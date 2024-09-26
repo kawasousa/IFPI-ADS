@@ -1,16 +1,16 @@
 # Konsulta Enem
 ---
 ## Funções
-###   Genéricas
-####     *Filter*
-	Busca por itens da lista que atendam a um critério específico.
-	A função recebe como parâmetros a lista com os itens a ser filtrados e uma função (recebe dois itens e retorna verdadeiro ou falso) usada como
-	critério de avaliação que vai definir se o item analisado deve ou não estar na lista atual.
-####     *Reduce*
-	Busca por um valor específico na lista
-####     *Quick Sort*
-	Ordenamento da lista baseado em um dado
-###   Do Projeto
+### Genéricas
+#### *Filter*
+Busca por itens da lista que atendam a um critério específico.
+A função recebe como parâmetros a lista com os itens a ser filtrados e uma função (recebe dois itens e retorna verdadeiro ou falso) usada como
+critério de avaliação que vai definir se o item analisado deve ou não estar na lista atual.
+#### *Reduce*
+Busca por um valor específico na lista
+#### *Quick Sort*
+Ordenamento da lista baseado em um dado
+### Do Projeto
 #### Show Ranked List
 #### Get Number
 	Mostra os N primeiros itens de uma lista

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EnemKonsulta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b313253b4f1a9cd2c9c0de1ecc605f3bf45ed1e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a1c652d41941373b67d022bfe17cfcae8ce2587")]
 [assembly: System.Reflection.AssemblyProductAttribute("EnemKonsulta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EnemKonsulta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
