@@ -13,7 +13,8 @@ namespace EnemKonsulta.app
         public static string GetString(string message)
         {
             Console.Write(message);
-            return Console.ReadLine() ?? "";
+            string result = Console.ReadLine() ?? "";
+            return result;
         }
 
         public static void AwaitEnter(string message = "Pressione ENTER para prosseguir")
@@ -43,11 +44,31 @@ namespace EnemKonsulta.app
             Console.WriteLine("+" + new string(char.Parse("-"), title.Length+2) + "+");
         }
 
-        public static List<List<string>> FilterList(List<List<string>> list, Func<List<string>, bool> criterion)
+        public static void ShowOptions(List<string> options, string lastOption = "Voltar")
         {
-            List<List<string>> filteredList = new();
+            for(int i = 0; i < options.Count; i++)
+            {
+                if(options[i].Equals(""))
+                {
+                    Console.WriteLine();
+                }
+                else
+                {
+                    Console.WriteLine($"[{(i<9?"0":"")}{i+1}] - {options[i]}");
+                }
+            }
 
-            foreach(List<string> item in list)
+            if(lastOption != "")
+            {
+                Console.WriteLine($"\n[0] - {lastOption}");
+            }
+        }
+
+        public static List<Dictionary<string,object>> FilterList(List<Dictionary<string,object>> list, Func<Dictionary<string,object>, bool> criterion)
+        {
+            List<Dictionary<string,object>> filteredList = new();
+
+            foreach(Dictionary<string,object> item in list)
             {
                 if(criterion(item))
                 {
@@ -58,79 +79,29 @@ namespace EnemKonsulta.app
             return filteredList;
         }
 
-        public static float ReduceList(List<List<string>> list, int dataIndex, Func<float, float, float> work, float cumulator)
+        public static float ReduceList(List<Dictionary<string,object>> list, string dataName, Func<float, float, float> work, float cumulator)
         {
             for(int i = 0; i < list.Count; i++)
             {
-                float item = float.Parse(list[i][dataIndex]);
+                object objItem = list[i][dataName];
+                float item = (float)objItem;
                 cumulator = work(cumulator, item);
             }
 
             return cumulator;
         }
 
-        public static List<List<string>> QuickSort(List<List<string>> list, int dataIndex, bool reverse = false)
+        public static bool ListHasValue(List<string> list, object value)
         {
-            if(list.Count == 1){return list;}
-
-            float pivot = float.Parse(list[0][dataIndex]);
-            List<List<string>> leftList = new();
-            List<List<string>> rightList = new();
-
-            for(int i = 1; i < list.Count; i++)
+            foreach(object item in list)
             {
-                float item = float.Parse(list[i][dataIndex]);
-
-                if(reverse)
+                if(item.Equals(value))
                 {
-                    if(pivot > item){
-                        leftList.Add(list[i]);
-                    }
-                    else
-                    {
-                        rightList.Add(list[i]);
-                    }
-                }
-                else
-                {
-                    if(pivot < item){
-                        leftList.Add(list[i]);
-                    }
-                    else
-                    {
-                        rightList.Add(list[i]);
-                    }
+                    return true;
                 }
             }
 
-            List<List<string>> pivotList = new() {list[0]};
-
-            if(leftList.Count > 0 && rightList.Count > 0)
-            {
-                leftList = QuickSort(leftList, dataIndex, reverse);
-                rightList = QuickSort(rightList, dataIndex, reverse);
-            }
-
-            //SortedList is leftList + pivotList + RightList
-            List<List<string>> sortedList = [.. leftList, .. pivotList, .. rightList];
-
-            return sortedList;
-        }
-
-        public static void ShowList(List<List<string>> list, string info, int dataIndex, string data = "")
-        {
-            foreach(List<string> item in list)
-            {
-                Console.WriteLine($"{info} {data}: {item[dataIndex]}");
-            }
-        }
-
-        public static void ShowRankedList(List<List<string>> list, int rankNumber, int dataIndex)
-        {
-            for(int i = 0; i < rankNumber; i++)
-            {
-                Console.WriteLine($"{i+1} - {list[i][1]}: {list[i][dataIndex]}");
-            }
+            return false;
         }
     }
 }
