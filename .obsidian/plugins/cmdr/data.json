@@ -1,0 +1,63 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "app:open-settings",
+      "icon": "lucide-settings",
+      "name": "Open settings",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-git:commit",
+      "icon": "align-horizontal-space-around",
+      "name": "Git: Commit all changes",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-git:push2",
+      "icon": "arrow-up-circle",
+      "name": "Git: Push",
+      "mode": "any"
+    },
+    {
+      "id": "markdown:toggle-preview",
+      "icon": "lucide-book-open",
+      "name": "Toggle reading view",
+      "mode": "any"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": [
+      "Open quick switcher",
+      "Open graph view",
+      "Open today's daily note",
+      "Create new canvas",
+      "Insert template",
+      "Open command palette",
+      "Sync with Remote",
+      "Open Git source control"
+    ]
+  },
+  "spacing": 8,
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}
