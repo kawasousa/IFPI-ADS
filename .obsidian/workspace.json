@@ -39,6 +39,22 @@
             }
           },
           {
+            "id": "48a657e053caf3c8",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "c49f20f17e7dbd0d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
             "id": "6a5f9ab432f63207",
             "type": "leaf",
             "state": {
@@ -52,24 +68,9 @@
                 "sortOrder": "alphabetical"
               }
             }
-          },
-          {
-            "id": "c49f20f17e7dbd0d",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {}
-            }
-          },
-          {
-            "id": "48a657e053caf3c8",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {}
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -147,28 +148,27 @@
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
       "github-sync:Sync with Remote": false,
-      "open-vscode:VSCode": false,
-      "code-files:Create Code File": false,
       "cmdr:Open settings": false,
-      "cmdr:Git: Push": false,
       "cmdr:Git: Commit all changes": false,
+      "cmdr:Git: Push": false,
       "cmdr:Toggle reading view": false,
-      "hidden-folder-obsidian:Hidden Folders": false
+      "open-vscode:VSCode": false,
+      "code-files:Create Code File": false
     }
   },
-  "active": "27eef09c31af9c8a",
+  "active": "48a657e053caf3c8",
   "lastOpenFiles": [
-    "Disciplina-AlgProg/Praticas e Exercicios/Exercicios/Hanoi RGB/Program.cs",
-    "Disciplina-AlgProg/Praticas e Exercicios/Exercicios/Hanoi RGB/Hanoi.sln",
-    "Disciplina-AlgProg/Praticas e Exercicios/Exercicios/Hanoi RGB/Hanoi.csproj",
-    "Disciplina-AlgProg/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/refint/Hanoi.dll",
-    "Disciplina-AlgProg/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/ref/Hanoi.dll",
-    "Disciplina-AlgProg/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/Hanoi.GlobalUsings.g.cs",
-    "Disciplina-AlgProg/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/refint",
-    "Disciplina-AlgProg/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/ref",
-    "Disciplina-AlgProg/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/Hanoi.sourcelink.json",
-    "Disciplina-AlgProg/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/Hanoi.pdb",
-    "Disciplina-AlgProg/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/Hanoi.GeneratedMSBuildEditorConfig.editorconfig",
+    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/Program.cs",
+    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/Hanoi.sln",
+    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/Hanoi.csproj",
+    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/refint/Hanoi.dll",
+    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/ref/Hanoi.dll",
+    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/Hanoi.GlobalUsings.g.cs",
+    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/refint",
+    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/ref",
+    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/Hanoi.sourcelink.json",
+    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/Hanoi.pdb",
+    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/Hanoi.GeneratedMSBuildEditorConfig.editorconfig",
     "Estrutura-de-Dados/tests/CodeNote.md"
   ]
 }
