@@ -28,6 +28,12 @@
       "icon": "lucide-book-open",
       "name": "Toggle reading view",
       "mode": "any"
+    },
+    {
+      "id": "obsidian-git:view-file-on-github",
+      "icon": "airplay",
+      "name": "Git: Open file on GitHub",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],

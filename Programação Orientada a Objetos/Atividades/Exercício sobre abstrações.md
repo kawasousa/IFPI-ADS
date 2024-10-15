@@ -1,4 +1,9 @@
 # Exercício sobre abstrações
+## Enunciado
+Avalie os 3 textos em anexo e identifique:  
+1) Entidades/Substantivos/Classificações mais relevantes do texto;  
+2) Características das Entidades/Substantivos/Classificações;  
+3) Comportamentos das Entidades/Substantivos/Classificações.
 ## Aplicação Financeira
 ### Entidades (Objetos)
 - Conta Bancária
