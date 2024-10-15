@@ -120,11 +120,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kawas\\OneDrive\\Documents\\ADS\\Github\\Disciplina-AlgProg\\Exercicios\\Exercicios\\PatroKars\\PatroKars.csproj",
+      "projectUniqueName": "C:\\Users\\kawas\\OneDrive\\Documents\\Main\\IFPI-ADS\\Algoritmos e Programação\\Praticas e Exercicios\\Exercicios\\PatroKars\\PatroKars.csproj",
       "projectName": "PatroKars",
-      "projectPath": "C:\\Users\\kawas\\OneDrive\\Documents\\ADS\\Github\\Disciplina-AlgProg\\Exercicios\\Exercicios\\PatroKars\\PatroKars.csproj",
+      "projectPath": "C:\\Users\\kawas\\OneDrive\\Documents\\Main\\IFPI-ADS\\Algoritmos e Programação\\Praticas e Exercicios\\Exercicios\\PatroKars\\PatroKars.csproj",
       "packagesPath": "C:\\Users\\kawas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kawas\\OneDrive\\Documents\\ADS\\Github\\Disciplina-AlgProg\\Exercicios\\Exercicios\\PatroKars\\obj\\",
+      "outputPath": "C:\\Users\\kawas\\OneDrive\\Documents\\Main\\IFPI-ADS\\Algoritmos e Programação\\Praticas e Exercicios\\Exercicios\\PatroKars\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kawas\\AppData\\Roaming\\NuGet\\NuGet.Config"

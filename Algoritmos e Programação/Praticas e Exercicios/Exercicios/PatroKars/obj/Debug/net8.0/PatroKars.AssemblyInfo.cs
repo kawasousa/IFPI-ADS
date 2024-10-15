@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PatroKars")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d23876a5017721068ff60da543080ecc2c72aa9c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35f8dc9c23714011d71d87a5333e5c8d5b01d00d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PatroKars")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PatroKars")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
