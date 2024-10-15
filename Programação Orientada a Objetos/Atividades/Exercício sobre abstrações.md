@@ -7,6 +7,7 @@ Avalie os 3 textos em anexo e identifique:
 ## Aplicação Financeira
 ### Entidades (Objetos)
 - Conta Bancária
+- Cliente
 - Sistema
 ### Características (Atributos)
 - Conta Bancária
@@ -18,7 +19,8 @@ Avalie os 3 textos em anexo e identifique:
 - Conta Bancária
 	- Depósito
 	- Saque
-	- Ver histórico
+- Cliente
+	- Ver histórico de alterações da conta
 - Sistema
 	- Atualizar o saldo em tempo real
 	- Adicionar novas contas
