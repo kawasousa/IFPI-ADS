@@ -155,16 +155,20 @@
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
       "github-sync:Sync with Remote": false,
+      "open-vscode:VSCode": false,
+      "code-files:Create Code File": false,
       "cmdr:Open settings": false,
       "cmdr:Git: Commit all changes": false,
       "cmdr:Git: Push": false,
       "cmdr:Toggle reading view": false,
-      "open-vscode:VSCode": false,
-      "code-files:Create Code File": false
+      "cmdr:Git: Open file on GitHub": false
     }
   },
   "active": "48a657e053caf3c8",
   "lastOpenFiles": [
+    "Programação Orientada a Objetos/Atividades/PDFs",
+    "Programação Orientada a Objetos/Atividades/PDFs/poo_01_exercicio_abstracoes.pdf",
+    "Programação Orientada a Objetos/Atividades/poo_01_exercicio_abstracoes.pdf.opdownload",
     "Programação Orientada a Objetos/Anotações de Sala/objetos.js",
     "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
     "Arquitetura de Computadores/Anotações/Estrutura Básica de Computadores.md",
@@ -175,9 +179,6 @@
     "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/Hanoi.sln",
     "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/Hanoi.csproj",
     "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/refint/Hanoi.dll",
-    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/ref/Hanoi.dll",
-    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/Hanoi.GlobalUsings.g.cs",
-    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/refint",
     "Estrutura-de-Dados/tests/CodeNote.md"
   ]
 }
