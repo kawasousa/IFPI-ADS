@@ -84,6 +84,5 @@ Avalie os 3 textos em anexo e identifique:
 	- Subir de nível
 	- Desbloquear novas habilidades
 	- Aumentar os atributos
-	- Gerenciar inventário
-		- Adicionar Itens
-		- Remover Itens
+	- Adicionar itens ao inventário
+	- Remover itens do inventário
