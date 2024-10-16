@@ -1,0 +1,1 @@
+Uma dúvida. Na declaração da classe, eu posso criar construtores com o mesmo nome, porém com parâmetros diferentes. Mas porquê não usar apenas um construtor e deixar os parâmetros não essenciais como opcionais? (não sei se faz sentido). Por exemplo: public Person(String name, Integer age = 19);

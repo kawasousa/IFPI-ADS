@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
+                "file": "Programação Orientada a Objetos/Dúvidas para o Jotinha Devs.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
+                "file": "Programação Orientada a Objetos/Dúvidas para o Jotinha Devs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
+                "file": "Programação Orientada a Objetos/Dúvidas para o Jotinha Devs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md"
+                "file": "Programação Orientada a Objetos/Dúvidas para o Jotinha Devs.md"
               }
             }
           }
@@ -166,19 +166,19 @@
   },
   "active": "48a657e053caf3c8",
   "lastOpenFiles": [
-    "Programação Orientada a Objetos/Atividades/PDFs",
-    "Programação Orientada a Objetos/Atividades/PDFs/poo_01_exercicio_abstracoes.pdf",
-    "Programação Orientada a Objetos/Atividades/poo_01_exercicio_abstracoes.pdf.opdownload",
-    "Programação Orientada a Objetos/Anotações de Sala/objetos.js",
     "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
+    "Programação Orientada a Objetos/Atividades/AbstracoesCode/RedeSocial.exe",
+    "Programação Orientada a Objetos/Atividades/AbstracoesCode/RedeSocial.cpp",
+    "Programação Orientada a Objetos/Atividades/AbstracoesCode/abstracoesRedeSocial.cpp",
+    "Programação Orientada a Objetos/Atividades/AbstracoesCode/User.h",
+    "Programação Orientada a Objetos/Atividades/AbstracoesCode/Main.cpp",
+    "Programação Orientada a Objetos/Atividades/AbstracoesCode/Post.cpp",
+    "Programação Orientada a Objetos/Atividades/AbstracoesCode/User.cpp",
+    "Programação Orientada a Objetos/Atividades/AbstracoesCode",
+    "Programação Orientada a Objetos/Atividades/RedeSocial.exe",
+    "Programação Orientada a Objetos/Atividades/Programa.exe",
+    "Programação Orientada a Objetos/Dúvidas para o Jotinha Devs.md",
     "Arquitetura de Computadores/Anotações/Estrutura Básica de Computadores.md",
-    "Programação Orientada a Objetos/Atividades",
-    "Arquitetura de Computadores/Anotações",
-    "Arquitetura de Computadores",
-    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/Program.cs",
-    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/Hanoi.sln",
-    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/Hanoi.csproj",
-    "Algoritmos e Programação/Praticas e Exercicios/Exercicios/Hanoi RGB/obj/Debug/net8.0/refint/Hanoi.dll",
     "Estrutura-de-Dados/tests/CodeNote.md"
   ]
 }
