@@ -37,6 +37,7 @@ Atributos são definidos como importantes ou não a depender dos requisitos do s
 | Endereço                 |        Rede social         |         Plano de saúde          |       Sistema de entregas        |
 | Saldo em conta           |        Rede Social         |         Plano de saúde          |          Conta bancária          |
 | Etnia                    |       Conta bancária       | Sistema de pesquisa estatística |   Cadastro em concurso público   |
+
 ¹Um sistema de RPG em que a habilidade destra do personagem é importante para o sucesso de uma jogada.
 ## Questão 4 - `Conta` e `Pessoa` como objetos
 ### a. Usar Pessoa como atributo de Conta
