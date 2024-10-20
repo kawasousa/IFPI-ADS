@@ -78,13 +78,13 @@ O jogo escolhido para abstrair foi o [Pong](https://www.bbc.com/portuguese/geral
 - Jogador 1;
 - Jogador 2;
 - Pontuação do Jogador 1;
-- Pontuação do Jogador 2.
-- Vencedor;
+- Pontuação do Jogador 2;
+- Vencedor.
 ### Métodos
 - Iniciar partida;
 - Pausar partida;
 - Computar ponto;
-- Encerrar partida.
+- Encerrar partida;
 - Mostrar vencedor.
 ## Questão 7 - Implementar a classe `Retângulo`
 ### Enunciado:
