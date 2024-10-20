@@ -1,4 +1,4 @@
-# Atividade Extra - Classes e Abstrações
+# Atividade Extra - Classes: Atributos, Métodos e Abstrações
 
 ## Questão 1 - Diferença entre Classe e Objeto
 ### Resposta:
