@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "51621093448cf311",
+        "id": "6431f76646c5a44f",
         "type": "tabs",
         "children": [
           {
-            "id": "501f418c686e030d",
+            "id": "78eeedd0ded263b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -184,6 +184,8 @@
   },
   "active": "48a657e053caf3c8",
   "lastOpenFiles": [
+    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/draw.io.md",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Exercício 1 - Extra.md",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos/qst09_SituacaoFinanceira.js",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos/qst09_SituacaoFinanceira.ts",
@@ -193,7 +195,6 @@
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos/qst07_Retangulo.ts",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Untitled.md",
-    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Exercício 1 - Extra.md",
     "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
     "Sistemas Operacionais/Estrutura em um SO.md",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações",
@@ -201,7 +202,6 @@
     "Análise e Projeto de Sistemas/Modelagem de Projeto.md",
     "Análise e Projeto de Sistemas",
     "Engenharia de Software/Aula 2.md",
-    "Sistemas Operacionais",
     "Arquitetura de Computadores/Anotações/Estrutura Básica de Computadores.md",
     "Estrutura-de-Dados/tests/CodeNote.md"
   ]
