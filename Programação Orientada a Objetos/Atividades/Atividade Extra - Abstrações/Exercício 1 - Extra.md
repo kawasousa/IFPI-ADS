@@ -28,15 +28,16 @@ São comportamentos comuns e acessíveis a todos os objetos moldados a partir de
 ## Questão 3 - Atributos importantes de um sistema
 Atributos são definidos como importantes ou não a depender dos requisitos do sistema desenvolvido e da sua utilidade para o software. Isso significa que uma característica de uma mesma abstração (a idade de uma classe Pessoa, por exemplo) pode ser essencial em um sistema (a requisição de uma CNH) ou irrelevante em outro (a requisição de um bilhete de entrada numa festa infantil).
 
-| Atributo                 |       Não importante       |           Importante            |          Essencial           |
-| ------------------------ | :------------------------: | :-----------------------------: | :--------------------------: |
-| CPF                      |        Rede social         |                                 |        Conta bancária        |
-| Histórico de saúde       | Sistema de venda de lanche |                                 |        Plano de saúde        |
-| Quantidade de seguidores |       Plano de saúde       |                                 |         Rede social          |
-| Habilidade destra        |                            |                                 |                              |
-| Endereço                 |        Rede social         |         Plano de saúde          |     Sistema de entregas      |
-| Saldo em conta           |        Rede Social         |         Plano de saúde          |        Conta bancária        |
-| Etnia                    |       Conta bancária       | Sistema de pesquisa estatística | Cadastro em concurso público |
+| Atributo                 |       Não importante       |           Importante            |            Essencial             |
+| ------------------------ | :------------------------: | :-----------------------------: | :------------------------------: |
+| CPF                      |        Rede social         | Gerador de cupons de descontos  |          Conta bancária          |
+| Histórico de saúde       | Sistema de venda de lanche |  Cadastro em concurso público   |          Plano de saúde          |
+| Quantidade de seguidores |       Plano de saúde       | Sistema de pesquisa estatística |           Rede social            |
+| Habilidade destra        |       Conta bancária       |          Jogo de RPG¹           | Cadastro em competição esportiva |
+| Endereço                 |        Rede social         |         Plano de saúde          |       Sistema de entregas        |
+| Saldo em conta           |        Rede Social         |         Plano de saúde          |          Conta bancária          |
+| Etnia                    |       Conta bancária       | Sistema de pesquisa estatística |   Cadastro em concurso público   |
+¹Um sistema de RPG em que a habilidade destra do personagem é importante para o sucesso de uma jogada.
 ## Questão 4 - `Conta` e `Pessoa` como objetos
 ### a. Usar Pessoa como atributo de Conta
 #### Enunciado:
