@@ -27,57 +27,14 @@ São comportamentos comuns e acessíveis a todos os objetos moldados a partir de
 	- Métodos: comer(), falar().
 ## Questão 3 - Atributos importantes de um sistema
 Atributos são definidos como importantes ou não a depender dos requisitos do sistema desenvolvido e da sua utilidade para o software. Isso significa que uma característica de uma mesma abstração (a idade de uma classe Pessoa, por exemplo) pode ser essencial em um sistema (a requisição de uma CNH) ou irrelevante em outro (a requisição de um bilhete de entrada numa festa infantil).
-### CPF
-#### Importante
 
-#### Não Importante
-- Cadastro em rede social
-#### Essencial
-- Gerenciamento de uma conta bancária
-### Histórico de saúde
-#### Importante
-
-#### Não Importante
-- Sistema de venda de lanches.
-#### Essencial
-- Gerenciamento de Plano de Saúde
-### Quantidade de seguidores
-#### Importante
-
-#### Não Importante
-- Gerenciamento de Plano de Saúde
-#### Essencial
-- Gerenciamento da conta em uma rede social
-### Habilidade Destra
-#### Importante
-
-#### Não Importante
-
-#### Essencial
-### Endereço
-#### Importante
-- Gerenciamento do plano de saúde
-#### Não Importante
-- Gerenciamento de uma conta de uma rede social
-#### Essencial
-- Sistema dos Correios
-### Saldo em conta
-#### Importante
-- Gerenciamento de plano de saúde
-#### Não Importante
-- Gerenciamento de uma conta de uma rede social
-#### Essencial
-- Gerenciamento de conta bancária
-### Etnia
-#### Importante
-- Gerenciamento de plano de saúde.
-#### Não Importante
-- Gerenciamento de conta bancária.
-#### Essencial
-- Sistema de cadastro em concurso público.
-
-
-|     | Importante | Não importante | Essencial |
-| --- | :--------: | -------------: | --------- |
-| CPF |            |                |           |
+| Atributo                 |       Não importante       |           Importante            |          Essencial          |
+| ------------------------ | :------------------------: | :-----------------------------: | :-------------------------: |
+| CPF                      |        Rede social         |                                 |       Conta bancária        |
+| Histórico de saúde       | Sistema de venda de lanche |                                 |       Plano de saúde        |
+| Quantidade de seguidores |       Plano de saúde       |                                 |         Rede social         |
+| Habilidade destra        |                            |                                 |                             |
+| Endereço                 |        Rede social         |         Plano de saúde          |     Sistema de entregas     |
+| Saldo em conta           |        Rede Social         |         Plano de saúde          |       Conta bancária        |
+| Etnia                    |       Conta bancária       | Sistema de pesquisa estatística | Cadastro em concurso públic |
 ## Questão 4 - 
