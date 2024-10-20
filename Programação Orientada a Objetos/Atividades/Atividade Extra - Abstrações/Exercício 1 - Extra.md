@@ -52,7 +52,15 @@ representaria o conjunto de contas de uma pessoa?
 #### Resposta:
 Uma pessoa ter várias contas seria, sim, um caso interessante se considerado, por exemplo, que uma pessoa pode ter vários `tipos de conta` dentro do sistema bancário, como `conta corrente` ou `conta poupança`. Esses vários tipos de conta poderiam armazenados em uma lista (um Array, um List ou qualquer outro tipo de conjunto de dados) e, dessa forma, o melhor elemento da [programação estruturada](https://platzi.com.br/blog/programacao-estruturada/) seria a `iteração ou loop`, que percorreria a lista de contas para obter ou manipular as informações.
 ## Questão 5 - Objetos do Controle Acadêmico
-
+### Enunciado:
+Identifique pelo menos 5 objetos de um sistema de controle acadêmico. Ex: aluno.
+Professor, disciplina, turma, coordenador, sala.
+### Resposta:
+- Curso
+- Laboratório
+- Biblioteca
+- Reitor
+- Monitor
 ## Questão 6 - Atributos e Métodos de um [Pong](https://www.bbc.com/portuguese/geral-60039831)
 O jogo escolhido para abstrair foi o Pong, um dos primeiro jogos eletrônicos criados.
 ### Atributos
