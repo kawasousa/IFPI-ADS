@@ -75,4 +75,9 @@ Atributos são definidos como importantes ou não a depender dos requisitos do s
 - Gerenciamento de conta bancária.
 #### Essencial
 - Sistema de cadastro em concurso público.
+
+
+|     | Importante | Não importante | Essencial |
+| --- | :--------: | -------------: | --------- |
+| CPF |            |                |           |
 ## Questão 4 - 
