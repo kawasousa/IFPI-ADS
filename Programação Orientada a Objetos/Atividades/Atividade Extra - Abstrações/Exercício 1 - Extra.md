@@ -38,5 +38,41 @@ Atributos são definidos como importantes ou não a depender dos requisitos do s
 #### Importante
 
 #### Não Importante
-- Sistema de venda de lanches
+- Sistema de venda de lanches.
 #### Essencial
+- Gerenciamento de Plano de Saúde
+### Quantidade de seguidores
+#### Importante
+
+#### Não Importante
+- Gerenciamento de Plano de Saúde
+#### Essencial
+- Gerenciamento da conta em uma rede social
+### Habilidade Destra
+#### Importante
+
+#### Não Importante
+
+#### Essencial
+### Endereço
+#### Importante
+- Gerenciamento do plano de saúde
+#### Não Importante
+- Gerenciamento de uma conta de uma rede social
+#### Essencial
+- Sistema dos Correios
+### Saldo em conta
+#### Importante
+- Gerenciamento de plano de saúde
+#### Não Importante
+- Gerenciamento de uma conta de uma rede social
+#### Essencial
+- Gerenciamento de conta bancária
+### Etnia
+#### Importante
+- Gerenciamento de plano de saúde.
+#### Não Importante
+- Gerenciamento de conta bancária.
+#### Essencial
+- Sistema de cadastro em concurso público.
+## Questão 4 - 
