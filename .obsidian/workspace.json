@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6431f76646c5a44f",
+        "id": "d8425cd0ce27726f",
         "type": "tabs",
         "children": [
           {
-            "id": "78eeedd0ded263b4",
+            "id": "22184f14bb4aeea5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -184,8 +184,13 @@
   },
   "active": "48a657e053caf3c8",
   "lastOpenFiles": [
-    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/draw.io.md",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/SituacaoFinanceira.png",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Exercício 1 - Extra.md",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/SituacaoFinanceira.png.opdownload",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/Circulo.png",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/Circulo.png.opdownload",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/draw.io.md",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/Circulo.drawio",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos/qst09_SituacaoFinanceira.js",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos/qst09_SituacaoFinanceira.ts",
@@ -193,14 +198,11 @@
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos/qst08_Circulo.ts",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos/qst07_Retangulo.js",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos/qst07_Retangulo.ts",
-    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Untitled.md",
     "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
     "Sistemas Operacionais/Estrutura em um SO.md",
-    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações",
     "Programação Orientada a Objetos/Dúvidas para o Jotinha Devs.md",
     "Análise e Projeto de Sistemas/Modelagem de Projeto.md",
-    "Análise e Projeto de Sistemas",
     "Engenharia de Software/Aula 2.md",
     "Arquitetura de Computadores/Anotações/Estrutura Básica de Computadores.md",
     "Estrutura-de-Dados/tests/CodeNote.md"

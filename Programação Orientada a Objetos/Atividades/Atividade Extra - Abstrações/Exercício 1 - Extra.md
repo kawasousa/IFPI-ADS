@@ -89,8 +89,13 @@ os dois atributos e exiba o resultado do método calcularSaldo().
 ### Código:
 
 ## Questão 10 - UML das classes Circulo e SituacaoFinanceira no draw.io
+[Diagrama UML de classes - LucidChart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 ### Enunciado
 Represente as classes das questões 8 e 9 no formato UML. Pesquise uma
 ferramenta como draw.io ou PlantUML
 ### Resposta:
-[Link para o draw.io]()
+![Imagem do UML Circulo]()
+[Link para o draw.io da classe Circulo]()
+
+![Imagem do UML SituacaoFinanceira]()
+[Link para o draw.io da classe SituacaoFinanceira]()
