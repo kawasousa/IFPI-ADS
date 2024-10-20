@@ -6,7 +6,7 @@ Classes podem ser entendidas como modelos/moldes para a construção de um objet
 
 Um objeto é a concretização de uma classe. A partir dessa concretização, os valores dos atributos, bem como os comportamentos, descritos na classe podem ser obtidos ou manipulados.
 ### Exemplo:
-Uma Classe `Gato` define características que um gato qualquer deve ter, como `nome`, `idade` ou `peso`, e que, a nível de classe, não têm valor. A classe Gato também tem comportamentos que todo gato tem, como `Correr`, `Dormir` ou `MiaSemPararAteGanharComida`.
+Uma Classe `Gato` define características que um gato qualquer deve ter, como `nome`, `idade` ou `peso`, e que, a nível de classe, não têm valor. A classe Gato também tem comportamentos que todo gato tem, como `Correr`, `Dormir` ou `MiarSemPararAteGanharComida`.
 
 O objeto `Akira` é uma instância da classe Gato, ou seja, tem os atributos e métodos que todo gato tem, mas com valores definidos. Seu atributo `nome` tem o valor "Akira", seu atributo `idade` tem valor. Seu comportamento `Correr`, no entanto, faz o mesmo que toda instância da Classe Gato faz (há também a possibilidade de sobreposição de métodos, mas não levemos isso em consideração _ainda_).
 
