@@ -1,6 +1,5 @@
 # UML - Linguagem de Modelagem Unificada
 UML é uma linguagem que unifica as definições relacionadas a modelar e documentar um sistema orientado a objetos.
-
 ## Diagramas
 A UML possui 9 diagramas para orientar o projeto de um sistema:
 - Diagrama de Classes
@@ -36,8 +35,7 @@ Um `ator filho` pode se comunicar com todos os casos de uso que o seu `ator pai`
 
 ##### Fronteira do sistema
 
-## Links e Refências
+## Links e Referências
 [Introdução a UML - DevMedia](https://www.devmedia.com.br/introducao-a-uml/6928)
 
 [Introdução à UML - Aline Montenegro (Professora de APS)](https://drive.google.com/file/d/1HGbnzF_4nARzXbaBVamn27yDSymQHvnD/view)
-

@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8b55dc0064f656a4",
+        "id": "51621093448cf311",
         "type": "tabs",
         "children": [
           {
-            "id": "ca18a00c08cb754b",
+            "id": "501f418c686e030d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Análise e Projeto de Sistemas/Modelagem de Projeto.md",
+                "file": "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Exercício 1 - Extra.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Exercício 1 - Extra"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -47,7 +51,9 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -55,7 +61,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
@@ -70,7 +78,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           }
         ],
@@ -102,7 +112,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Modelagem de Projeto"
             }
           },
           {
@@ -114,7 +126,9 @@
                 "file": "Análise e Projeto de Sistemas/Modelagem de Projeto.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Modelagem de Projeto"
             }
           },
           {
@@ -125,7 +139,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -134,8 +150,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Análise e Projeto de Sistemas/Modelagem de Projeto.md"
-              }
+                "file": "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Exercício 1 - Extra.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Exercício 1 - Extra"
             }
           }
         ],
@@ -166,15 +184,16 @@
   },
   "active": "48a657e053caf3c8",
   "lastOpenFiles": [
-    "Sistemas Operacionais/Estrutura em um SO.md",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações",
+    "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
+    "Programação Orientada a Objetos/Dúvidas para o Jotinha Devs.md",
     "Análise e Projeto de Sistemas/Modelagem de Projeto.md",
+    "Sistemas Operacionais/Estrutura em um SO.md",
     "Análise e Projeto de Sistemas",
     "Engenharia de Software/Aula 2.md",
     "Sistemas Operacionais",
-    "Programação Orientada a Objetos/Atividades/Exercício 1 - Extra.md",
-    "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Exercício 1 - Extra.md",
     "Engenharia de Software",
-    "Programação Orientada a Objetos/Dúvidas para o Jotinha Devs.md",
     "Programação Orientada a Objetos/Atividades/AbstracoesCode/RedeSocial.exe",
     "Programação Orientada a Objetos/Atividades/AbstracoesCode/RedeSocial.cpp",
     "Programação Orientada a Objetos/Atividades/AbstracoesCode/abstracoesRedeSocial.cpp",
