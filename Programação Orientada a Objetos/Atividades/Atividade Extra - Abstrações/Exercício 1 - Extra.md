@@ -72,8 +72,8 @@ Professor, disciplina, turma, coordenador, sala.
 - Monitor.
 	- Atributo: Nome, Horário disponível;
 	- Método: Abrir laboratório, Fechar laboratório.
-## Questão 6 - Atributos e Métodos de um [Pong](https://www.bbc.com/portuguese/geral-60039831)
-O jogo escolhido para abstrair foi o Pong, um dos primeiro jogos eletrônicos criados.
+## Questão 6 - Atributos e Métodos de um Pong
+O jogo escolhido para abstrair foi o [Pong](https://www.bbc.com/portuguese/geral-60039831), um dos primeiro jogos eletrônicos criados.
 ### Atributos
 - Jogador 1;
 - Jogador 2;
