@@ -28,13 +28,18 @@ São comportamentos comuns e acessíveis a todos os objetos moldados a partir de
 ## Questão 3 - Atributos importantes de um sistema
 Atributos são definidos como importantes ou não a depender dos requisitos do sistema desenvolvido e da sua utilidade para o software. Isso significa que uma característica de uma mesma abstração (a idade de uma classe Pessoa, por exemplo) pode ser essencial em um sistema (a requisição de uma CNH) ou irrelevante em outro (a requisição de um bilhete de entrada numa festa infantil).
 
-| Atributo                 |       Não importante       |           Importante            |          Essencial          |
-| ------------------------ | :------------------------: | :-----------------------------: | :-------------------------: |
-| CPF                      |        Rede social         |                                 |       Conta bancária        |
-| Histórico de saúde       | Sistema de venda de lanche |                                 |       Plano de saúde        |
-| Quantidade de seguidores |       Plano de saúde       |                                 |         Rede social         |
-| Habilidade destra        |                            |                                 |                             |
-| Endereço                 |        Rede social         |         Plano de saúde          |     Sistema de entregas     |
-| Saldo em conta           |        Rede Social         |         Plano de saúde          |       Conta bancária        |
-| Etnia                    |       Conta bancária       | Sistema de pesquisa estatística | Cadastro em concurso públic |
-## Questão 4 - 
+| Atributo                 |       Não importante       |           Importante            |          Essencial           |
+| ------------------------ | :------------------------: | :-----------------------------: | :--------------------------: |
+| CPF                      |        Rede social         |                                 |        Conta bancária        |
+| Histórico de saúde       | Sistema de venda de lanche |                                 |        Plano de saúde        |
+| Quantidade de seguidores |       Plano de saúde       |                                 |         Rede social          |
+| Habilidade destra        |                            |                                 |                              |
+| Endereço                 |        Rede social         |         Plano de saúde          |     Sistema de entregas      |
+| Saldo em conta           |        Rede Social         |         Plano de saúde          |        Conta bancária        |
+| Etnia                    |       Conta bancária       | Sistema de pesquisa estatística | Cadastro em concurso público |
+## Questão 4 - `Conta` e `Pessoa` como objetos
+### a.
+#### Enunciado:
+Seria interessante em um sistema bancário um objeto `conta` possuir uma `pessoa` como um atributo interno representando o titular da conta?
+#### Resposta:
+Sim, pois as operações feitas na conta estarão sempre vinculadas ao titular dessa conta, que é uma pessoa. Tendo uma `Pessoa` como atributo da `conta`, é possível obter informações do titular da conta, além de rastrear as alterações feitas, como saques e depósitos, e vinculá-las ao usuário.
