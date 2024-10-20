@@ -21,5 +21,22 @@ A manipulação de um atributo a partir de um objeto apenas altera a caracterís
 Como exemplo, pode-se tomar uma Classe `Bolo` e os objetos `Bolo de Cenoura` e `Bolo de Limão`. A `quantidade de pedaços` de bolo é um atributo que todos os bolos têm, mas retirar um pedaço do Bolo de Cenoura, isto é, `alterar o atributo "quantidade de pedaços"`, _apenas_ muda essa característica no  Bolo de Cenoura, mantendo o valor de `quantidade de pedaços` do Bolo de Limão.
 ### Métodos
 São comportamentos comuns e acessíveis a todos os objetos moldados a partir dessa classe. São `funções` que qualquer instância da classe pode executar.
+### Exemplo:
+- Pessoa
+	- Atributos: idade, nome;
+	- Métodos: comer(), falar().
+## Questão 3 - Atributos importantes de um sistema
+Atributos são definidos como importantes ou não a depender dos requisitos do sistema desenvolvido e da sua utilidade para o software. Isso significa que uma característica de uma mesma abstração (a idade de uma classe Pessoa, por exemplo) pode ser essencial em um sistema (a requisição de uma CNH) ou irrelevante em outro (a requisição de um bilhete de entrada numa festa infantil).
+### CPF
+#### Importante
 
-## Questão 3 - 
+#### Não Importante
+- Cadastro em rede social
+#### Essencial
+- Gerenciamento de uma conta bancária
+### Histórico de saúde
+#### Importante
+
+#### Não Importante
+- Sistema de venda de lanches
+#### Essencial
