@@ -86,20 +86,20 @@ O jogo escolhido para abstrair foi o [Pong](https://www.bbc.com/portuguese/geral
 - Computar ponto;
 - Encerrar partida;
 - Mostrar vencedor.
-## Questão 7 - Implementar a classe `Retângulo`
+## Questão 7 - Implementar a classe `Retangulo`
 ### Enunciado:
 Considerando o exemplo da classe Retangulo dos slides, implemente um método
 adicional chamado que calcule o perímetro do retângulo. Teste os métodos do
 retângulo.
 ### Código:
-
+[Link para o código de implementação da classe Retangulo em Typescript](https://github.com/kawasousa/IFPI-ADS/blob/673a9cb7b76c7e742aebdfce90d92856707e21b8/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Atividades/Atividade%20Extra%20-%20Abstra%C3%A7%C3%B5es/C%C3%B3digos/qst07_Retangulo.ts)
 ## Questão 8 - Classe `Circulo`
 ### Enunciado:
 Crie uma classe Circulo que possua um atributo raio. Crie dois métodos que
 calculam a área e o perímetro. Instancie um objeto dessa classe, atribua um valor
 ao raio e exiba a área e o perímetro chamando os dois métodos definidos.
 ### Código:
-
+[Link para o código de implementação da classe Circulo em Typescript](https://github.com/kawasousa/IFPI-ADS/blob/673a9cb7b76c7e742aebdfce90d92856707e21b8/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Atividades/Atividade%20Extra%20-%20Abstra%C3%A7%C3%B5es/C%C3%B3digos/qst08_Circulo.ts)
 ## Questão 9 - Classe `SituacaoFinanceira`
 ### Enunciado:
 Crie uma classe chamada SituacaoFinanceira com os atributos valorCreditos e
@@ -107,7 +107,7 @@ valorDebitos. Crie um método chamado calcularSaldo() que retorna/calcula a
 diferença entre crédito e débito. Instancie uma classe SituacaoFinanceira, inicialize
 os dois atributos e exiba o resultado do método calcularSaldo().
 ### Código:
-
+[Link para o código de implementação da classe SituacaoFinanceira em Typescript](https://github.com/kawasousa/IFPI-ADS/blob/673a9cb7b76c7e742aebdfce90d92856707e21b8/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Atividades/Atividade%20Extra%20-%20Abstra%C3%A7%C3%B5es/C%C3%B3digos/qst09_SituacaoFinanceira.ts)
 ## Questão 10 - UML das classes Circulo e SituacaoFinanceira no draw.io
 [Definição de Diagrama UML de classes - LucidChart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 ### Enunciado
