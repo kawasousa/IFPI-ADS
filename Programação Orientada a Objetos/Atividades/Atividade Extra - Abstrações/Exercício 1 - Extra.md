@@ -38,8 +38,16 @@ Atributos são definidos como importantes ou não a depender dos requisitos do s
 | Saldo em conta           |        Rede Social         |         Plano de saúde          |        Conta bancária        |
 | Etnia                    |       Conta bancária       | Sistema de pesquisa estatística | Cadastro em concurso público |
 ## Questão 4 - `Conta` e `Pessoa` como objetos
-### a.
+### a. Usar Pessoa como atributo de Conta
 #### Enunciado:
 Seria interessante em um sistema bancário um objeto `conta` possuir uma `pessoa` como um atributo interno representando o titular da conta?
 #### Resposta:
 Sim, pois as operações feitas na conta estarão sempre vinculadas ao titular dessa conta, que é uma pessoa. Tendo uma `Pessoa` como atributo da `conta`, é possível obter informações do titular da conta, além de rastrear as alterações feitas, como saques e depósitos, e vinculá-las ao usuário.
+### b. Usar Contas como atributos de Pessoa
+#### Enunciado:
+Olhando no sentido inverso, seria interessante uma pessoa possuir mais de
+uma conta como atributo? Que elemento da programação estruturada melhor
+representaria o conjunto de contas de uma pessoa?
+#### Resposta:
+Uma pessoa ter várias contas seria, sim, um caso interessante se considerado, por exemplo, que uma pessoa pode ter vários `tipos de conta` dentro do sistema bancário, como `conta corrente` ou `conta poupança`. Esses vários tipos de conta poderiam armazenados em uma lista (um Array, um List ou qualquer outro tipo de conjunto de dados) e, dessa forma, o melhor elemento da [programação estruturada](https://platzi.com.br/blog/programacao-estruturada/) seria a `iteração ou loop`, que percorreria a lista de contas para obter ou manipular as informações.
+## Questão 5 - 
