@@ -57,11 +57,21 @@ Uma pessoa ter várias contas seria, sim, um caso interessante se considerado, p
 Identifique pelo menos 5 objetos de um sistema de controle acadêmico. Ex: aluno.
 Professor, disciplina, turma, coordenador, sala.
 ### Resposta:
-- Curso
-- Laboratório
-- Biblioteca
-- Reitor
-- Monitor
+- Curso;
+	- Atributo: Disciplinas, Numero de matriculados;
+	- Método: Adicionar disciplina, Obter coordenador.
+- Laboratório;
+	- Atributo: Monitor, Capacidade;
+	- Método: Alterar monitor, Trocar Computadores.
+- Biblioteca;
+	- Atributo: Quantidade de livros, Quantidade de cabines;
+	- Método: Emprestar livro, Alugar cabine.
+- Reitor;
+	- Atributo: Idade, Formação;
+	- Método: Revisar cursos.
+- Monitor.
+	- Atributo: Nome, Horário disponível;
+	- Método: Abrir laboratório, Fechar laboratório.
 ## Questão 6 - Atributos e Métodos de um [Pong](https://www.bbc.com/portuguese/geral-60039831)
 O jogo escolhido para abstrair foi o Pong, um dos primeiro jogos eletrônicos criados.
 ### Atributos
