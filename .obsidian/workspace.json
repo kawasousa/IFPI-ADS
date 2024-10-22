@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d8425cd0ce27726f",
+        "id": "8baf91c29b350b68",
         "type": "tabs",
         "children": [
           {
-            "id": "22184f14bb4aeea5",
+            "id": "369d7cb17426fda3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Exercício 1 - Extra.md",
+                "file": "Programação Orientada a Objetos/Anotações de Sala/Tipos Classes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Exercício 1 - Extra"
+              "title": "Tipos Classes"
             }
           }
         ]
@@ -83,8 +83,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -150,10 +149,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Exercício 1 - Extra.md"
+                "file": "Programação Orientada a Objetos/Anotações de Sala/Tipos Classes.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Exercício 1 - Extra"
+              "title": "Outline of Tipos Classes"
             }
           }
         ],
@@ -182,8 +181,10 @@
       "cmdr:Git: Open file on GitHub": false
     }
   },
-  "active": "22184f14bb4aeea5",
+  "active": "369d7cb17426fda3",
   "lastOpenFiles": [
+    "Programação Orientada a Objetos/Anotações de Sala/Tipos Classes.md",
+    "Programação Orientada a Objetos/Anotações de Sala/objetos.js",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/SituacaoFinanceira.png.opdownload",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/Circulo.png.opdownload",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/SituacaoFinanceira.drawio",
@@ -197,8 +198,6 @@
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos/qst09_SituacaoFinanceira.ts",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos/qst08_Circulo.js",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos/qst08_Circulo.ts",
-    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos/qst07_Retangulo.js",
-    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Códigos/qst07_Retangulo.ts",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Untitled.md",
     "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
     "Sistemas Operacionais/Estrutura em um SO.md",
