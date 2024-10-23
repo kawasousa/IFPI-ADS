@@ -46,4 +46,4 @@ Um Array que agrupa outros Arrays com mais de uma camada.
 ## Lista Ligada
 É uma estrutura de dados linear que agrupa elementos com mais de um tipo de dado c
 ### Lista de ligação única
-quero gozar lentinho pros cr
+quero gozar lentinho pros crias
