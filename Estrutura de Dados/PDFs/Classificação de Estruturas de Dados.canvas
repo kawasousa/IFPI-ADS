@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"931217aa11421840","type":"text","text":"Estrutura de Dados","x":-300,"y":-251,"width":250,"height":60},
+		{"id":"84ad19752979461e","type":"text","text":"Não primitivos","x":-76,"y":-78,"width":176,"height":60},
+		{"id":"c1b9b4d56e0ae585","type":"text","text":"Linear","x":-259,"y":80,"width":117,"height":60},
+		{"id":"b7afdb1ec261d7ec","type":"text","text":"Não Linear","x":140,"y":80,"width":160,"height":60},
+		{"id":"807da39625c6e02a","type":"text","text":"Árvore","x":240,"y":231,"width":140,"height":60},
+		{"id":"baa951b3bf3b5947","type":"text","text":"Grafo","x":80,"y":231,"width":120,"height":60},
+		{"id":"63a7bde3187b735a","type":"text","text":"Estática","x":-334,"y":231,"width":133,"height":60},
+		{"id":"2f372f653ee55631","type":"text","text":"Primitivos\n(int, float, string)","x":-453,"y":-78,"width":186,"height":60},
+		{"id":"23346c899245611d","x":-447,"y":380,"width":113,"height":60,"type":"text","text":"Array"},
+		{"id":"24d426eb5cb067f5","type":"text","text":"Dinâmica","x":-142,"y":231,"width":151,"height":60},
+		{"id":"fa26a4bc5457c311","x":-281,"y":380,"width":160,"height":60,"type":"text","text":"Lista Ligada"},
+		{"id":"7b40d03db4c8129c","x":-109,"y":380,"width":109,"height":60,"type":"text","text":"Pilha"},
+		{"id":"f8ef92b821ebfc35","x":9,"y":380,"width":96,"height":60,"type":"text","text":"Fila"}
+	],
+	"edges":[
+		{"id":"1ba118dca3f61c60","fromNode":"931217aa11421840","fromSide":"bottom","toNode":"2f372f653ee55631","toSide":"top"},
+		{"id":"81de5f211b848ecd","fromNode":"931217aa11421840","fromSide":"bottom","toNode":"84ad19752979461e","toSide":"top"},
+		{"id":"7db4d3d90a2327cf","fromNode":"c1b9b4d56e0ae585","fromSide":"top","toNode":"84ad19752979461e","toSide":"left"},
+		{"id":"c42add577c48e98e","fromNode":"84ad19752979461e","fromSide":"right","toNode":"b7afdb1ec261d7ec","toSide":"top"},
+		{"id":"d0b4768a18c49fa1","fromNode":"c1b9b4d56e0ae585","fromSide":"bottom","toNode":"63a7bde3187b735a","toSide":"top"},
+		{"id":"11dd7e3393aa1518","fromNode":"c1b9b4d56e0ae585","fromSide":"bottom","toNode":"24d426eb5cb067f5","toSide":"top"},
+		{"id":"3be36eac920f71e3","fromNode":"b7afdb1ec261d7ec","fromSide":"bottom","toNode":"baa951b3bf3b5947","toSide":"top"},
+		{"id":"9e65002bb20437cb","fromNode":"b7afdb1ec261d7ec","fromSide":"bottom","toNode":"807da39625c6e02a","toSide":"top"},
+		{"id":"44abeadceb0dfd01","fromNode":"63a7bde3187b735a","fromSide":"bottom","toNode":"23346c899245611d","toSide":"top"},
+		{"id":"f2d67cd0dbd214d0","fromNode":"24d426eb5cb067f5","fromSide":"bottom","toNode":"fa26a4bc5457c311","toSide":"top"},
+		{"id":"2cecf872616a8e15","fromNode":"24d426eb5cb067f5","fromSide":"bottom","toNode":"7b40d03db4c8129c","toSide":"top"},
+		{"id":"be4f9579c7af6205","fromNode":"24d426eb5cb067f5","fromSide":"bottom","toNode":"f8ef92b821ebfc35","toSide":"top"}
+	]
+}
