@@ -5,9 +5,8 @@ import pyperclip
 from PIL import Image, ImageTk
 import requests
 from io import BytesIO
-from time import sleep
 
-
+# Adiciona a imagem da url dada à janela do tk
 def CreateImage(window: tk.Tk, url_text = "https://pbs.twimg.com/media/GF2VS6QWAAAueIT.jpg"):
     img_response = requests.get(url_text)
     img = Image.open(BytesIO(img_response.content))
