@@ -1,0 +1,22 @@
+# Nome do executável final
+TARGET = DucklingShell
+
+# Diretórios
+SRC_DIR = src
+INC_DIR = include
+BUILD_DIR = build
+
+# Arquivos de código-fonte
+SRC_FILES = $(SRC_DIR)/main.cpp $(SRC_DIR)/minhas_funcoes.cpp
+
+# Flags de compilação
+CXX = g++
+CXXFLAGS = -I$(INC_DIR) -Wall
+
+# Cria o executável final
+$(TARGET): $(SRC_FILES)
+	$(CXX) $(CXXFLAGS) $(SRC_FILES) -o $(BUILD_DIR)/$(TARGET)
+
+# Limpeza dos arquivos gerados
+clean:
+	rm -rf $(BUILD_DIR)/*

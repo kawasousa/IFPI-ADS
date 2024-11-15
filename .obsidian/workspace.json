@@ -4,20 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "54cb45827d19b509",
+        "id": "eef0c01551fe8c29",
         "type": "tabs",
         "children": [
           {
-            "id": "2eced0e2c738c45a",
+            "id": "1081494bb9e60cba",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": ".obsidian/workspace.json",
-                "staged": false
+                "file": "Teste e Projetos Simples/Ducking Shell/README.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "git-pull-request",
-              "title": "Diff View (workspace.json)"
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -148,9 +149,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Teste e Projetos Simples/Ducking Shell/README.md"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of README"
             }
           }
         ],
@@ -175,23 +178,25 @@
       "cmdr:Open settings": false,
       "cmdr:Git: Commit all changes": false,
       "cmdr:Git: Push": false,
-      "cmdr:Toggle reading view": false,
+      "cmdr:Toggle reading view": true,
       "cmdr:Git: Open file on GitHub": false
     }
   },
   "active": "48a657e053caf3c8",
   "lastOpenFiles": [
-    "Programação Orientada a Objetos/Projetos Simples/Pokemon/obj/Debug/net8.0/Pokemon.csproj.FileListAbsolute.txt",
-    "Programação Orientada a Objetos/Projetos Simples/Pokemon/bin/Debug/net8.0/Pokemon.pdb",
-    "Programação Orientada a Objetos/Projetos Simples/Pokemon/obj/Debug/net8.0/ref/Pokemon.dll",
-    "Programação Orientada a Objetos/Projetos Simples/Pokemon/bin/Debug/net8.0/Pokemon.dll",
-    "Programação Orientada a Objetos/Projetos Simples/Pokemon/bin/Debug/net8.0/Pokemon.runtimeconfig.json",
-    "Programação Orientada a Objetos/Projetos Simples/Pokemon/obj/Debug/net8.0/Pokemon.genruntimeconfig.cache",
-    "Programação Orientada a Objetos/Projetos Simples/Pokemon/bin/Debug/net8.0/Pokemon.deps.json",
-    "Programação Orientada a Objetos/Projetos Simples/Pokemon/bin/Debug/net8.0/Pokemon.exe",
-    "Programação Orientada a Objetos/Projetos Simples/Pokemon/obj/Debug/net8.0/apphost.exe",
-    "Programação Orientada a Objetos/Projetos Simples/Pokemon/obj/Debug/net8.0/refint/Pokemon.dll",
-    "Programação Orientada a Objetos/Projetos Simples/Pokemon/obj/Debug/net8.0/Pokemon.pdb",
+    "Teste e Projetos Simples/Ducking Shell/source-code/MakeFile",
+    "Teste e Projetos Simples/Ducking Shell/source-code/build",
+    "Teste e Projetos Simples/Ducking Shell/source-code/include",
+    "Teste e Projetos Simples/Ducking Shell/source-code/src/utils.cpp",
+    "Teste e Projetos Simples/Ducking Shell/source-code/src/main.cpp",
+    "Teste e Projetos Simples/Ducking Shell/source-code/src",
+    "Teste e Projetos Simples/Ducking Shell/source-code",
+    "Teste e Projetos Simples/Ducking Shell/src/main.cpp",
+    "Teste e Projetos Simples/Ducking Shell/src/models",
+    "Teste e Projetos Simples/Ducking Shell/src/dshell.cpp",
+    "Teste e Projetos Simples/Ducking Shell/src/utils.cpp",
+    "Teste e Projetos Simples/Ducking Shell/README.md",
+    "Programação Orientada a Objetos/Atividades/Introducao ao Typescript/Exercício 02.md",
     "Programação Orientada a Objetos/Anotações de Sala/Tipos Classes.md",
     "Legislação/Igreja católica na política.md",
     "Estrutura de Dados/Anotações/Introdução.md",
