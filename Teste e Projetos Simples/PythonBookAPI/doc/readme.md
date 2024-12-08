@@ -9,4 +9,4 @@ Etapas de uma API:
     - localhost/livros/ID (DELETE)
 - Recursos: Livros
 
-Recurso pra criação de API: Flask
+Framework pra criação de API: Flask
