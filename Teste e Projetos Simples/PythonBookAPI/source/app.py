@@ -4,6 +4,7 @@ import json
 app = Flask(__name__)
 dataPath = './db/books.json'
 
+# Retorna todos os livros do banco de dados
 @app.route('/books',methods=['GET']) # Liga a função ao endpoint '/books'
 def GetBooks():
     with open(dataPath, 'r') as data:

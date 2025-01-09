@@ -47,5 +47,13 @@
       ],
       "key": "ArrowDown"
     }
+  ],
+  "colored-text:color-text": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "2"
+    }
   ]
 }

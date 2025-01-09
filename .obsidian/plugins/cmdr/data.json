@@ -2,7 +2,15 @@
   "confirmDeletion": true,
   "showAddCommand": true,
   "debug": false,
-  "editorMenu": [],
+  "editorMenu": [
+    {
+      "id": "colored-text:color-text",
+      "icon": "album",
+      "name": "Colored Text: Color Text",
+      "mode": "any",
+      "color": "#ff0000"
+    }
+  ],
   "fileMenu": [],
   "leftRibbon": [
     {
@@ -54,7 +62,7 @@
       "Open Git source control"
     ]
   },
-  "spacing": 8,
+  "spacing": "8",
   "advancedToolbar": {
     "rowHeight": 48,
     "rowCount": 1,

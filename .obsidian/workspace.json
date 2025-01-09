@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "eef0c01551fe8c29",
+        "id": "7d73077187b995d0",
         "type": "tabs",
         "children": [
           {
-            "id": "1081494bb9e60cba",
+            "id": "8d7f1304e4837f52",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teste e Projetos Simples/Ducking Shell/README.md",
+                "file": "Estrutura de Dados/Atividades/Questão 8/Atividade 8.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Atividade 8"
             }
           }
         ]
@@ -52,8 +52,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -83,8 +83,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -150,10 +149,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teste e Projetos Simples/Ducking Shell/README.md"
+                "file": "Banco de Dados I/Exercícios/Modelagem - Internação de pacientes.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of Modelagem - Internação de pacientes"
             }
           }
         ],
@@ -161,7 +160,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,38 +173,46 @@
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
       "github-sync:Sync with Remote": false,
-      "open-vscode:VSCode": false,
-      "code-files:Create Code File": false,
       "cmdr:Open settings": false,
       "cmdr:Git: Commit all changes": false,
       "cmdr:Git: Push": false,
-      "cmdr:Toggle reading view": true,
-      "cmdr:Git: Open file on GitHub": false
+      "cmdr:Toggle reading view": false,
+      "cmdr:Git: Open file on GitHub": false,
+      "open-vscode:VSCode": false,
+      "code-files:Create Code File": false
     }
   },
-  "active": "48a657e053caf3c8",
+  "active": "8d7f1304e4837f52",
   "lastOpenFiles": [
-    "Teste e Projetos Simples/Ducking Shell/source-code/MakeFile",
-    "Teste e Projetos Simples/Ducking Shell/source-code/build",
-    "Teste e Projetos Simples/Ducking Shell/source-code/include",
-    "Teste e Projetos Simples/Ducking Shell/source-code/src/utils.cpp",
-    "Teste e Projetos Simples/Ducking Shell/source-code/src/main.cpp",
-    "Teste e Projetos Simples/Ducking Shell/source-code/src",
-    "Teste e Projetos Simples/Ducking Shell/source-code",
-    "Teste e Projetos Simples/Ducking Shell/src/main.cpp",
-    "Teste e Projetos Simples/Ducking Shell/src/models",
-    "Teste e Projetos Simples/Ducking Shell/src/dshell.cpp",
-    "Teste e Projetos Simples/Ducking Shell/src/utils.cpp",
+    "Estrutura de Dados/Atividades/Questão 8/InterceccaoListas.c",
+    "Estrutura de Dados/Atividades/Questão 8/InterceccaoListas.cpp",
+    "Estrutura de Dados/Atividades/Questão 8/IntercecaoListas.cpp",
+    "Estrutura de Dados/Atividades/Questão 8/UniaoListas.cpp",
+    "Estrutura de Dados/Atividades/Questão 8/Atividade 8.md",
+    "Análise e Projeto de Sistemas/Atividades/Revisão/Revisão - APS.pdf",
+    "Análise e Projeto de Sistemas/Anotações/Revisão (socorro).md",
+    "Análise e Projeto de Sistemas/Anotações/Modelagem de Projeto.md",
+    "Análise e Projeto de Sistemas/Materiais/Principios-de-analise-e-projeto-de-sistemas-com-uml.pdf",
+    "Análise e Projeto de Sistemas/Atividades/Diagramas de caso de uso/Diagrama - Blog.pdf",
+    "Estrutura de Dados/PDFs/cap 2  - Pilhas - Estrutura de Dados Em C.pdf",
+    "Estrutura de Dados/PDFs/Aula 3 Listas.pdf",
+    "Estrutura de Dados/PDFs/Aula 2 Listas.pdf",
+    "Estrutura de Dados/PDFs/Aula 1 Listas.pdf",
+    "Sistemas Operacionais/Revisão.md",
+    "Banco de Dados I/Exercícios/Modelagem - Internação de pacientes.md",
+    "Banco de Dados I/Exercícios/Modelagem - Locação de Veículos.md",
+    "Estrutura de Dados/Atividades/Questão 9.10/c.md",
+    "Estrutura de Dados/Anotações/Introdução.md",
+    "Estrutura de Dados/PDFs/Classificação de Estruturas de Dados.canvas",
+    "Arquitetura de Computadores/Anotações/Estrutura Básica de Computadores.md",
+    "Teste e Projetos Simples/Ducking Shell/dev-doc.md",
     "Teste e Projetos Simples/Ducking Shell/README.md",
     "Programação Orientada a Objetos/Atividades/Introducao ao Typescript/Exercício 02.md",
     "Programação Orientada a Objetos/Anotações de Sala/Tipos Classes.md",
     "Legislação/Igreja católica na política.md",
-    "Estrutura de Dados/Anotações/Introdução.md",
-    "Estrutura de Dados/PDFs/Classificação de Estruturas de Dados.canvas",
     "Estrutura de Dados/Atividades/Atividade - Cap 1/Exercício.md",
     "Estrutura de Dados/Anotações.md",
     "Análise e Projeto de Sistemas/Atividades/Diagramas de caso de uso/Modelagem - Pizzaria.md",
-    "Análise e Projeto de Sistemas/Anotações/Modelagem de Projeto.md",
     "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/SituacaoFinanceira.png",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Exercício 1 - Extra.md",
@@ -214,7 +222,6 @@
     "Sistemas Operacionais/Estrutura em um SO.md",
     "Programação Orientada a Objetos/Dúvidas para o Jotinha Devs.md",
     "Engenharia de Software/Aula 2.md",
-    "Arquitetura de Computadores/Anotações/Estrutura Básica de Computadores.md",
     "Estrutura-de-Dados/tests/CodeNote.md"
   ]
 }

@@ -1,4 +1,10 @@
 {
   "promptDelete": false,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "rightToLeft": false,
+  "foldIndent": true,
+  "foldHeading": true,
+  "showLineNumber": false,
+  "strictLineBreaks": false,
+  "readableLineLength": true
 }

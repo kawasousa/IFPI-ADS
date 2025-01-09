@@ -1,5 +1,5 @@
 # Duckling Shell
-Este projeto trata de uma aplicação em ambiente de console que simula um Prompt de Comando Windows feito em C++ e tem como propósito melhorar minha familiaridade com a linguagem.
+Este projeto trata de uma aplicação em ambiente de console que simula um Prompt de Comando Windows feita em C++ e tem como propósito melhorar minha familiaridade com a linguagem.
 ## Comandos projetados
 os comandos iniciais do projeto são:
 - `help`: mostra o guia de uso da aplicação e os possíveis comandos
@@ -7,20 +7,27 @@ os comandos iniciais do projeto são:
 - `cd`: navega entres o diretórios
 - `mkdir`: cria um novo diretório no diretório atual
 - `rmdir`: apaga o diretório do caminho passado
+- `duckling --config`: abre a interface de configurações do terminal
 - `exit`: fecha a aplicação
 ## Estrutura de pastas
-
 ```
 source-code/
 │
 ├── src/                   # Diretório para arquivos-fonte
 │   ├── main.cpp           # Arquivo principal com a função `main`
-│   └── minhas_funcoes.cpp # Arquivo com a implementação das funções
+│   └── utils.cpp          # Arquivo com a implementação das funções
 │
 ├── include/               # Diretório para arquivos de cabeçalho
-│   └── minhas_funcoes.h   # Cabeçalho que declara as funções
+│   └── utils.h            # Cabeçalho para funções
+│   └── shell.h            # 
+│
+├── models/                # 
+│   └── shell.cpp          #
 │
 ├── build/                 # Diretório para arquivos compilados
+│   └── main.exe           # Arquivo compilado do programa
 │
-└── Makefile               # Definições de build do projeto
+└── tokens/                #
+│   └── tokens.txt         #
+└── build.bat              # Código para compilar o projeto
 ```
