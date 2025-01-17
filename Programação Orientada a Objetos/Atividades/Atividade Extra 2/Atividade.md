@@ -26,8 +26,8 @@ let conta : Conta = new Conta();
 - new:  `Operador de instanciação`
 - Conta():  `Construtor`
 ## 5. Crie uma classe chamada ControleDeAudio a partir das orientações:
-Link para o arquivo ControleDeAudio.ts : []()
+Link para o arquivo ControleDeAudio.ts : [ControleDeAudio.ts](https://github.com/kawasousa/IFPI-ADS/blob/9fca2c747c37d048cf3831bba49b4df277513c97/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Atividades/Atividade%20Extra%202/ControleDeAudio%20TS/src/ControleDeAudio.ts)
 ## 6. Na questão sobre retângulos do exercício anterior, crie um método que retorna verdadeiro ou falso se o retângulo é um quadrado.
-Link para o arquivo Retangulo.ts: []()
+Link para o arquivo Retangulo.ts: [Retangulo.ts](https://github.com/kawasousa/IFPI-ADS/blob/9fca2c747c37d048cf3831bba49b4df277513c97/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Atividades/Atividade%20Extra%202/Retangulo/Retangulo.ts)
 ## 7. Implemente a questão do ControleDeAudio acima em outra linguagem que não seja TypeScript.
-Link para o arquivo ControleDeAudio.cpp: []()
+Link para o arquivo ControleDeAudio.cpp: [ControleDeAudio.cpp](https://github.com/kawasousa/IFPI-ADS/blob/9fca2c747c37d048cf3831bba49b4df277513c97/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos/Atividades/Atividade%20Extra%202/ControleDeAudio%20CPP/ControleDeAudio.cpp)
