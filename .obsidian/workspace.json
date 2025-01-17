@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6a03630ddf89724f",
+        "id": "44d6569ba133a8f8",
         "type": "tabs",
         "children": [
           {
-            "id": "4b5a3078e8c47641",
+            "id": "ae715340509e7b76",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programação Orientada a Objetos/Atividades/Atividade Extra 2/Atividade.md",
+                "file": "Programação Orientada a Objetos/Atividades/Exercicio 02/Exercício 02.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Atividade"
+              "title": "Exercício 02"
             }
           }
         ]
@@ -182,8 +182,12 @@
       "code-files:Create Code File": false
     }
   },
-  "active": "4b5a3078e8c47641",
+  "active": "ae715340509e7b76",
   "lastOpenFiles": [
+    "Programação Orientada a Objetos/Atividades/Exercicio 02/Exercício 02.md",
+    "Programação Orientada a Objetos/Atividades/Exercicio 02",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/Atividade.md",
+    "Análise e Projeto de Sistemas/Materiais/Diagrama sem nome.drawio",
     "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio CPP/ControleDeAudio.cpp",
     "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio CPP/ControleDeAudio.ts",
     "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio CPP",
@@ -192,9 +196,6 @@
     "Programação Orientada a Objetos/Atividades/Atividade Extra 2/Retangulo/Retangulo.ts",
     "Programação Orientada a Objetos/Atividades/Atividade Extra 2/Retangulo/tsconfig.json",
     "Programação Orientada a Objetos/Atividades/Atividade Extra 2/Retangulo/package.json",
-    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/Retangulo",
-    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio TS/dist/ControleDeAudio.js",
-    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio TS/src/ControleDeAudio.js",
     "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio TS/node_modules/typescript/README.md",
     "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio TS/node_modules/typescript/SECURITY.md",
     "Análise e Projeto de Sistemas/Atividades/Atividade Diagramas de Classe - Continuação/Exercício 1.md",
@@ -221,7 +222,6 @@
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Exercício 1 - Extra.md",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/Circulo.png",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/draw.io.md",
-    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Untitled.md",
-    "Sistemas Operacionais/Estrutura em um SO.md"
+    "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Untitled.md"
   ]
 }
