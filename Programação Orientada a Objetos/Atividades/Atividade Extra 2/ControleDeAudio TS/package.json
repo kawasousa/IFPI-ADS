@@ -1,0 +1,13 @@
+{
+  "name": "controledeaudio-ts",
+  "version": "1.0.0",
+  "main": "src/ControleDeAudio.ts",
+  "scripts": {
+    "build": "tsc ",
+    "start": "node dist/ControleDeAudio.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

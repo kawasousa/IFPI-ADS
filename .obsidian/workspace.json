@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7d73077187b995d0",
+        "id": "6a03630ddf89724f",
         "type": "tabs",
         "children": [
           {
-            "id": "8d7f1304e4837f52",
+            "id": "4b5a3078e8c47641",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Estrutura de Dados/Atividades/Questão 8/Atividade 8.md",
+                "file": "Programação Orientada a Objetos/Atividades/Atividade Extra 2/Atividade.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Atividade 8"
+              "title": "Atividade"
             }
           }
         ]
@@ -182,22 +182,25 @@
       "code-files:Create Code File": false
     }
   },
-  "active": "8d7f1304e4837f52",
+  "active": "4b5a3078e8c47641",
   "lastOpenFiles": [
-    "Estrutura de Dados/Atividades/Questão 8/InterceccaoListas.c",
-    "Estrutura de Dados/Atividades/Questão 8/InterceccaoListas.cpp",
-    "Estrutura de Dados/Atividades/Questão 8/IntercecaoListas.cpp",
-    "Estrutura de Dados/Atividades/Questão 8/UniaoListas.cpp",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio CPP/ControleDeAudio.cpp",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio CPP/ControleDeAudio.ts",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio CPP",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/Retangulo/dist/Retangulo.js",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/Retangulo/dist",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/Retangulo/Retangulo.ts",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/Retangulo/tsconfig.json",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/Retangulo/package.json",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/Retangulo",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio TS/dist/ControleDeAudio.js",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio TS/src/ControleDeAudio.js",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio TS/node_modules/typescript/README.md",
+    "Programação Orientada a Objetos/Atividades/Atividade Extra 2/ControleDeAudio TS/node_modules/typescript/SECURITY.md",
+    "Análise e Projeto de Sistemas/Atividades/Atividade Diagramas de Classe - Continuação/Exercício 1.md",
     "Estrutura de Dados/Atividades/Questão 8/Atividade 8.md",
-    "Análise e Projeto de Sistemas/Atividades/Revisão/Revisão - APS.pdf",
     "Análise e Projeto de Sistemas/Anotações/Revisão (socorro).md",
     "Análise e Projeto de Sistemas/Anotações/Modelagem de Projeto.md",
-    "Análise e Projeto de Sistemas/Materiais/Principios-de-analise-e-projeto-de-sistemas-com-uml.pdf",
-    "Análise e Projeto de Sistemas/Atividades/Diagramas de caso de uso/Diagrama - Blog.pdf",
-    "Estrutura de Dados/PDFs/cap 2  - Pilhas - Estrutura de Dados Em C.pdf",
-    "Estrutura de Dados/PDFs/Aula 3 Listas.pdf",
-    "Estrutura de Dados/PDFs/Aula 2 Listas.pdf",
-    "Estrutura de Dados/PDFs/Aula 1 Listas.pdf",
     "Sistemas Operacionais/Revisão.md",
     "Banco de Dados I/Exercícios/Modelagem - Internação de pacientes.md",
     "Banco de Dados I/Exercícios/Modelagem - Locação de Veículos.md",
@@ -219,9 +222,6 @@
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/Circulo.png",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/draw.io.md",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/Untitled.md",
-    "Sistemas Operacionais/Estrutura em um SO.md",
-    "Programação Orientada a Objetos/Dúvidas para o Jotinha Devs.md",
-    "Engenharia de Software/Aula 2.md",
-    "Estrutura-de-Dados/tests/CodeNote.md"
+    "Sistemas Operacionais/Estrutura em um SO.md"
   ]
 }
