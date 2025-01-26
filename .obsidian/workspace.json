@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programação Orientada a Objetos/Atividades/Atividade 07/readme.md",
+                "file": "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -52,8 +52,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -83,12 +83,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "18d8692f126c7e88",
@@ -183,8 +183,10 @@
       "code-files:Create Code File": false
     }
   },
-  "active": "b7ed2e0ee73ba674",
+  "active": "48a657e053caf3c8",
   "lastOpenFiles": [
+    "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/readme.md",
+    "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1",
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/testes.js.map",
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/testes.js",
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Poupanca.js.map",
@@ -194,8 +196,6 @@
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Conta.js.map",
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Conta.js",
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Cliente.js.map",
-    "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Cliente.js",
-    "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Banco.js.map",
     "Programação Orientada a Objetos/Atividades/Atividade 07/readme.md",
     "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
     "Análise e Projeto de Sistemas/Atividades/Mapeando Classes/readme.md",
