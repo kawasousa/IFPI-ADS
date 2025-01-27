@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/readme.md",
+                "file": "Sistemas Operacionais/Algoritmos - Trabalho/Algoritmo Circular.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "readme"
+              "title": "Algoritmo Circular"
             }
           }
         ]
@@ -83,7 +83,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -182,11 +183,14 @@
       "code-files:Create Code File": false
     }
   },
-  "active": "634073447bee9138",
+  "active": "48a657e053caf3c8",
   "lastOpenFiles": [
+    "Sistemas Operacionais/Algoritmos - Trabalho/Algoritmo do Banqueiro.md",
+    "Sistemas Operacionais/Algoritmos - Trabalho/Algoritmo Circular.md",
+    "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/readme.md",
+    "Sistemas Operacionais/Algoritmos - Trabalho",
     "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/App.ts",
     "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/Bank.ts",
-    "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/readme.md",
     "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1",
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/testes.js.map",
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/testes.js",
@@ -194,8 +198,6 @@
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/ContaImposto.js.map",
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Poupanca.js",
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/ContaImposto.js",
-    "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Conta.js.map",
-    "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Conta.js",
     "Programação Orientada a Objetos/Atividades/Atividade 07/readme.md",
     "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
     "Análise e Projeto de Sistemas/Atividades/Mapeando Classes/readme.md",
@@ -220,7 +222,6 @@
     "Programação Orientada a Objetos/Anotações de Sala/Tipos Classes.md",
     "Legislação/Igreja católica na política.md",
     "Estrutura de Dados/Atividades/Atividade - Cap 1/Exercício.md",
-    "Estrutura de Dados/Anotações.md",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/SituacaoFinanceira.png",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/Circulo.png"
   ]
