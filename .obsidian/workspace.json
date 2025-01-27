@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "10d8e703547f9278",
+        "id": "f82238e99b5097b4",
         "type": "tabs",
         "children": [
           {
-            "id": "b7ed2e0ee73ba674",
+            "id": "634073447bee9138",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -83,8 +83,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -183,8 +182,10 @@
       "code-files:Create Code File": false
     }
   },
-  "active": "48a657e053caf3c8",
+  "active": "634073447bee9138",
   "lastOpenFiles": [
+    "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/App.ts",
+    "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/Bank.ts",
     "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/readme.md",
     "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1",
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/testes.js.map",
@@ -195,7 +196,6 @@
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/ContaImposto.js",
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Conta.js.map",
     "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Conta.js",
-    "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Cliente.js.map",
     "Programação Orientada a Objetos/Atividades/Atividade 07/readme.md",
     "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
     "Análise e Projeto de Sistemas/Atividades/Mapeando Classes/readme.md",
@@ -221,7 +221,6 @@
     "Legislação/Igreja católica na política.md",
     "Estrutura de Dados/Atividades/Atividade - Cap 1/Exercício.md",
     "Estrutura de Dados/Anotações.md",
-    "Análise e Projeto de Sistemas/Atividades/Diagramas de caso de uso/Modelagem - Pizzaria.md",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/SituacaoFinanceira.png",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/Circulo.png"
   ]

@@ -2,10 +2,10 @@
   "obsidian-git",
   "github-sync",
   "cmdr",
-  "open-vscode",
   "execute-code",
   "code-files",
   "markdown-shortcuts",
   "obsidian-editor-shortcuts",
-  "colored-text"
+  "colored-text",
+  "open-vscode"
 ]
