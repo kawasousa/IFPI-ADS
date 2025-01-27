@@ -1,0 +1,15 @@
+@startuml cliente
+
+class Cliente{
+    - nome: string
+    - endereco: string
+    - telefone: string
+    - bairro: string
+}
+
+@enduml
+
+@startuml pizza
+
+
+@enduml

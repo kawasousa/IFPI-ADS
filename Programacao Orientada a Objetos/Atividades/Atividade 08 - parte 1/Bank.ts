@@ -6,12 +6,16 @@ class Conta {
     private _cliente!: Cliente;
 
     constructor(id: number, numero: string, saldo: number) {
+        this.validaValor(saldo);
+
         this._id = id;
         this._numero = numero;
         this._saldo = saldo;
     }
 
     public sacar(valor: number): void {
+        this.validaValor(valor);
+
         if (this._saldo < valor) {
             throw new Error('Saldo insuficiente:' + this._saldo);
         }
@@ -20,12 +24,20 @@ class Conta {
     }
 
     public depositar(valor: number): void {
+        this.validaValor(valor);
+
         this._saldo = this._saldo + valor;
     }
 
     public transferir(contaDestino: Conta, valor: number): void {
         this.sacar(valor);
         contaDestino.depositar(valor);
+    }
+
+    public validaValor(valor: number){
+        if(isNaN(valor) || valor < 0){
+            throw new Error('O valor deve ser maior que zero.')
+        }
     }
 
     public get id(): number {
