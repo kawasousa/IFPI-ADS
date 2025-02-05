@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f82238e99b5097b4",
+        "id": "3f37a2438eef7a13",
         "type": "tabs",
         "children": [
           {
-            "id": "634073447bee9138",
+            "id": "49a868a62af80955",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sistemas Operacionais/Algoritmos - Trabalho/Algoritmo Circular.md",
+                "file": "Sistemas Operacionais/Exercício 09.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Algoritmo Circular"
+              "title": "Exercício 09"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -179,25 +180,30 @@
       "cmdr:Git: Push": false,
       "cmdr:Toggle reading view": false,
       "cmdr:Git: Open file on GitHub": false,
-      "open-vscode:VSCode": false,
-      "code-files:Create Code File": false
+      "code-files:Create Code File": false,
+      "open-vscode:VSCode": false
     }
   },
   "active": "48a657e053caf3c8",
   "lastOpenFiles": [
     "Sistemas Operacionais/Algoritmos - Trabalho/Algoritmo do Banqueiro.md",
+    "Sistemas Operacionais/Exercício 09.md",
     "Sistemas Operacionais/Algoritmos - Trabalho/Algoritmo Circular.md",
+    "Sistemas Operacionais/Untitled",
+    "Sistemas Operacionais/Algoritmos - Trabalho/Banqueiro.ts",
+    "Untitled.canvas",
+    "Sistemas Operacionais/Algoritmos - Trabalho/DeadLock.md",
+    "Sistemas Operacionais/Algoritmos - Trabalho/Banqueiro.cpp",
+    "Sistemas Operacionais/Algoritmos - Trabalho/AlgoritmoDoBanqueiro.py",
+    "Sistemas Operacionais/Algoritmos - Trabalho/AlgoritmoDoBanqueiro.cpp",
+    "Banco de Dados I/Anotações/Normalização.md",
+    "Untitled.md",
+    "Banco de Dados I/Anotações",
     "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/readme.md",
     "Sistemas Operacionais/Algoritmos - Trabalho",
     "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/App.ts",
     "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/Bank.ts",
     "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1",
-    "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/testes.js.map",
-    "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/testes.js",
-    "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Poupanca.js.map",
-    "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/ContaImposto.js.map",
-    "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/Poupanca.js",
-    "Programação Orientada a Objetos/Atividades/Atividade 07/Banco/dist/ContaImposto.js",
     "Programação Orientada a Objetos/Atividades/Atividade 07/readme.md",
     "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
     "Análise e Projeto de Sistemas/Atividades/Mapeando Classes/readme.md",
@@ -218,10 +224,6 @@
     "Arquitetura de Computadores/Anotações/Estrutura Básica de Computadores.md",
     "Teste e Projetos Simples/Ducking Shell/dev-doc.md",
     "Teste e Projetos Simples/Ducking Shell/README.md",
-    "Programação Orientada a Objetos/Atividades/Introducao ao Typescript/Exercício 02.md",
-    "Programação Orientada a Objetos/Anotações de Sala/Tipos Classes.md",
-    "Legislação/Igreja católica na política.md",
-    "Estrutura de Dados/Atividades/Atividade - Cap 1/Exercício.md",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/SituacaoFinanceira.png",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/Circulo.png"
   ]
