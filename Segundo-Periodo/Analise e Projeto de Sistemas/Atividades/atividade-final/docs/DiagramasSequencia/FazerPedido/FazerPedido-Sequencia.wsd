@@ -1,0 +1,22 @@
+@startuml FazerPedido
+title Fazer pedido
+actor Cliente
+actor Atendente
+entity Sistema
+
+Cliente -> Atendente : Pede uma ou mais pizzas
+Atendente -> Sistema : Acessa o sistema para registrar o pedido
+Sistema -> Atendente : Exibe o pedido
+Atendente -> Cliente : Confirma o pedido
+
+alt Fluxo A1: Cliente não cadastrado
+    Atendente -> Sistema : Verifica cadastro do cliente
+    Sistema -> Atendente : Notifica que cliente não está cadastrado
+    Atendente -> Cliente : Solicita cadastro
+    Cliente -> Atendente : Fornece dados para cadastro
+    Atendente -> Sistema : Envia dados do cliente
+    Sistema -> Atendente : Valida e cadastra cliente
+    Atendente -> Cliente : Confirma cadastro
+    Atendente -> Sistema : Retorna ao processo de pedido
+end
+@enduml

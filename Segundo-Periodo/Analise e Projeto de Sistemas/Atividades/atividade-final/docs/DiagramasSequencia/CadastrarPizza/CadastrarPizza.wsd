@@ -1,0 +1,18 @@
+@startuml CadastrarPizza
+title Cadastrar pizza
+actor Atendente
+entity Sistema
+
+Atendente -> Sistema : Acessa o painel de cadastro de pizzas
+Atendente -> Sistema : Preenche nome e preço da pizza
+Atendente -> Sistema : Envia dados para o servidor
+Sistema -> Sistema : Valida os dados da pizza
+Sistema -> Atendente : Exibe mensagem de sucesso
+Atendente -> Sistema : Atualiza lista de pizzas cadastradas
+
+alt Fluxo A1: Falha no cadastro
+    Sistema -> Atendente : Exibe mensagem de erro
+    Atendente -> Sistema : Corrige dados
+    Atendente -> Sistema : Reenvia dados corrigidos
+end
+@enduml

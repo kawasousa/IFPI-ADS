@@ -2,5 +2,6 @@
   "theme": "obsidian",
   "baseFontSize": 18,
   "baseFontSizeAction": false,
-  "showViewHeader": true
+  "showViewHeader": true,
+  "accentColor": "#2ad593"
 }

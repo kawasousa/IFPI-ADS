@@ -1,3 +1,0 @@
-Código para compilar o projeto:
-
-gcc -o main.exe main.c lista_circular.c

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b82c9f28e8ed9739",
+        "id": "7a73a0088a39bb01",
         "type": "tabs",
         "children": [
           {
-            "id": "6751afa03dc3df10",
+            "id": "0d8e8c6805cd6424",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -85,7 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 226.5110321044922
   },
   "right": {
     "id": "18d8692f126c7e88",
@@ -176,12 +176,13 @@
       "cmdr:Git: Push": false,
       "cmdr:Toggle reading view": false,
       "cmdr:Git: Open file on GitHub": false,
-      "code-files:Create Code File": false,
       "open-vscode:VSCode": false
     }
   },
   "active": "48a657e053caf3c8",
   "lastOpenFiles": [
+    "Engenharia de Software/Untitled",
+    "Programacao Orientada a Objetos/Anotações de Sala/objetos/objetos.js",
     "Sistemas Operacionais/Exercicio 09.md",
     "Sistemas Operacionais/Algoritmos - Trabalho/Algoritmo do Banqueiro.md",
     "Sistemas Operacionais/Algoritmos - Trabalho/Algoritmo Circular.md",
@@ -199,7 +200,6 @@
     "Sistemas Operacionais/Algoritmos - Trabalho",
     "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/App.ts",
     "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1/Bank.ts",
-    "Programacao Orientada a Objetos/Atividades/Atividade 08 - parte 1",
     "Programação Orientada a Objetos/Atividades/Atividade 07/readme.md",
     "Programação Orientada a Objetos/Atividades/Exercício sobre abstrações.md",
     "Análise e Projeto de Sistemas/Atividades/Mapeando Classes/readme.md",
@@ -219,7 +219,6 @@
     "Estrutura de Dados/PDFs/Classificação de Estruturas de Dados.canvas",
     "Arquitetura de Computadores/Anotações/Estrutura Básica de Computadores.md",
     "Teste e Projetos Simples/Ducking Shell/dev-doc.md",
-    "Teste e Projetos Simples/Ducking Shell/README.md",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/SituacaoFinanceira.png",
     "Programação Orientada a Objetos/Atividades/Atividade Extra - Abstrações/UML/Circulo.png"
   ]

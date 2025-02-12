@@ -1,0 +1,58 @@
+' Desenvolva um diagrama de classe para um sistema de gestão de pedidos em um restaurante.
+' Considere os seguintes aspectos:
+' O restaurante possui um cardápio com vários itens (por exemplo, pratos, bebidas).
+' Cada item do cardápio tem um nome, preço e descrição.
+' O cliente faz pedidos que podem incluir um ou mais itens do cardápio.
+' Cada pedido tem um valor total, data e hora de realização.
+' Um pedido pode ser pago de diferentes formas (cartão, dinheiro, etc.).
+' Relação de Cardinalidade:
+' O Cardapio contém vários Itens.
+' Um Pedido pode ter vários Itens, com a quantidade de cada item. Essa relação é representada pela classe associativa PedidoItem.
+' Um Pedido pode ser realizado por um Cliente.
+' Cada Pedido tem um ou mais Pagamentos.
+
+@startuml Pedidos-Restaurante
+title Sistema de Gestão de Pedidos em um Restaurante
+
+class Item{
+    - nome: string
+    - preco: float
+    - descricao: string
+}
+
+class Cardapio{
+    - itens: Item[]
+}
+
+class Cliente{
+    - nome: string
+}
+
+class Pedido{
+    - cliente: Cliente
+    - itens: PedidoItem[]
+    - pagamentos: Pagamento[]
+    - valorTotal: float
+    - horario: DateTime
+}
+
+class PedidoItem{
+    - item: Item
+    - quantidade: int
+}
+
+class Pagamento{
+    - forma: string
+    - valor: float
+    - pedido: Pedido
+}
+
+' Relacionamentos
+Cliente "1..1" -- "1..N" Pedido
+Pedido "1..1" -- "1..N" Pagamento
+Cardapio "1..1" -- "1..N" Item
+
+PedidoItem "1..N" -- "1..1" Pedido
+PedidoItem "1..N" -- "1..1" Item
+
+@enduml

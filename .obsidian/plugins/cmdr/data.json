@@ -11,7 +11,14 @@
       "color": "#ff0000"
     }
   ],
-  "fileMenu": [],
+  "fileMenu": [
+    {
+      "id": "obsidian-icon-folder:iconize:set-icon-for-file",
+      "icon": "lucide-contrast",
+      "name": "Iconize: Set icon for file",
+      "mode": "any"
+    }
+  ],
   "leftRibbon": [
     {
       "id": "app:open-settings",

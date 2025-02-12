@@ -1,0 +1,45 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "FasFolder"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "custom",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "Algoritmos e Programacao": "FasFolder",
+  "Analise e Projeto de Sistemas": "FasFolder",
+  "Arquitetura de Computadores": "FasFolder",
+  "Banco de Dados I": "FasFolder",
+  "Engenharia de Software": "FasFolder",
+  "Estrutura de Dados": "FasFolder",
+  "Fundamentos da Metodologia de Extensão no Ensino Superior": "FasFolder",
+  "Programacao Orientada a Objetos": "FasFolder",
+  "Sistemas Operacionais": "FasFolder",
+  "Teste e Projetos Simples": "FasFolder",
+  "Segundo-Periodo": "FasFolder",
+  "Primeiro-Periodo": "FasFolder"
+}

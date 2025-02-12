@@ -1,0 +1,19 @@
+@startuml CadastrarCliente
+title Cadastrar cliente
+actor Atendente
+actor Cliente
+entity Sistema
+
+Atendente -> Sistema : Acessa o formulário de cadastro
+Atendente -> Cliente : Preenche dados do cliente
+Atendente -> Sistema : Envia dados para o servidor
+Sistema -> Sistema : Valida dados do cliente
+Sistema -> Atendente : Exibe mensagem de sucesso
+Atendente -> Cliente : Redireciona para a tela de pedidos
+
+alt Fluxo A1: Falha no cadastro
+    Sistema -> Atendente : Exibe mensagem de erro
+    Atendente -> Cliente : Corrige os dados
+    Atendente -> Sistema : Reenvia dados corrigidos
+end
+@enduml

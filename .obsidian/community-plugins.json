@@ -2,10 +2,8 @@
   "obsidian-git",
   "github-sync",
   "cmdr",
-  "execute-code",
-  "code-files",
   "markdown-shortcuts",
   "obsidian-editor-shortcuts",
-  "colored-text",
-  "open-vscode"
+  "open-vscode",
+  "obsidian-icon-folder"
 ]

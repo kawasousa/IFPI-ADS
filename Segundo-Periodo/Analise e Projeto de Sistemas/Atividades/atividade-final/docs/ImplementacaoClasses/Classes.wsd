@@ -1,0 +1,49 @@
+@startuml Pizzaria
+title Classes do sistema de pizzaria
+class Pedido {
+    - ID: String
+    - NomeCliente: String
+    - Situacao: String
+    - Data: Date
+    - Itens: List<ItemPedido>
+    - ValorTotal: Decimal
+}
+
+class ItemPedido{
+    - ID: String
+    - PedidoID: String
+    - PizzaID: String
+    - TamanhoID: String
+    - Quantidade: String
+    - PrecoItem: Float
+}
+
+class Atendente {
+    + RegistraPedido(): void
+    + ConfirmaPedido(): void
+    + CadastrarCliente(): void
+    + CadastrarPizza(): void
+}
+
+class Cliente {
+    - ID: String
+    - Nome: String
+    - Endereco: String
+    - Telefone: String
+    - Bairro: String
+    + FazPedido(): void
+}
+
+class Pizza {
+    - ID: String
+    - Sabor: String
+    - PrecoBase: Decimal
+}
+
+class TamanhoPizza{
+    - ID: String
+    - Nome: String
+    - Modificador: Float
+}
+
+@enduml
