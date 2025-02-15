@@ -1,6 +1,6 @@
-export class PerfilJaCadastradoError extends Error{
+export class ValorInvalidoError extends Error{
     constructor(){
         super();
-        console.log('Valor inválido.');
+        this.message = 'valor inválido'
     }
 }

@@ -1,3 +1,4 @@
+import { PerfilNaoAutorizadoError } from "../errors/PerfilNaoAutorizadoError";
 import { PerfilNaoEncontradoError } from "../errors/PerfilNaoEncontradoError";
 import { PublicacaoNaoEncontradaError } from "../errors/PublicacaoNaoEncontrada";
 import { SolicitacaoJaEnviadaError } from "../errors/SolicitacaoJaEnviadaError";
@@ -27,7 +28,6 @@ export class RedeSocial {
     try {
       const perfisDados = await this.dataManager.obterPerfils();
       this.perfis = this.transformarPerfis(perfisDados);
-      console.log("Perfis recuperados com sucesso! 🎉");
     } catch (error) {
       console.error("Erro ao recuperar perfis:", error);
     }
@@ -37,7 +37,6 @@ export class RedeSocial {
     try {
       const publicacoesDados = await this.dataManager.obterPublicacoes();
       this.publicacoes = this.transformarPublicacoes(publicacoesDados);
-      console.log("Publicações recuperadas com sucesso! 🚀");
     } catch (error) {
       console.error("Erro ao recuperar publicações:", error);
     }
@@ -67,14 +66,16 @@ export class RedeSocial {
     this.perfis.push(perfil);
   }
 
-  buscarPerfil(identificadorUnico: string): Perfil | null {
+  adicionarPerfilAvancado(apelido: string, foto: string, email: string, status: string) {
+    const id = this.perfis.length + 1;
+    const perfil: PerfiAvancado = new PerfiAvancado(id, apelido, foto, email, status);
+    this.perfis.push(perfil);
+  }
+
+  buscarPerfil(id: string): Perfil | null {
     for (const perfil of this.perfis) {
-      if (
-        perfil.apelido === identificadorUnico ||
-        perfil.id.toString() === identificadorUnico ||
-        perfil.email === identificadorUnico
-      ) {
-        return perfil;
+      if (perfil.id.toString() === id){
+        return perfil
       }
     }
     return null;
@@ -101,22 +102,23 @@ export class RedeSocial {
     return publicacoesDados.map(publicacao => {
       if (!publicacao.autor) {
         console.error(`Publicação com ID ${publicacao.id} não tem autor!`);
-        return null;  // Retorna null se o autor não estiver presente
+        return null;
       }
+
       if (publicacao.interactions) {
         const autor = this.buscarPerfil(publicacao.autor.toString());
-        
+
         if (!autor) {
           console.error(`Autor não encontrado para a publicação avançada com ID ${publicacao.id}`);
           return null;
         }
         const pubAvancada = new PublicacaoAvancada(publicacao.id, publicacao.conteudo, new Date(publicacao.data), autor);
-        
+
         if (publicacao.interactions) {
           pubAvancada.interacoes = publicacao.interactions.map((interacaoData: any) => {
             const interacaoAutor = this.buscarPerfil(interacaoData.autor.toString());
 
-            if(!interacaoAutor) throw new PerfilNaoEncontradoError();
+            if (!interacaoAutor) throw new PerfilNaoEncontradoError();
 
             return new Interacao(interacaoData.id, interacaoData.tipo, pubAvancada, interacaoAutor);
           });
@@ -129,6 +131,7 @@ export class RedeSocial {
           console.error(`Autor não encontrado para a publicação com ID ${publicacao.id}`);
           return null;
         }
+
         return new Publicacao(publicacao.id, publicacao.conteudo, new Date(publicacao.data), autor);
       }
     }).filter(publicacao => publicacao !== null);
@@ -138,12 +141,14 @@ export class RedeSocial {
     this.perfis.forEach(perfil => console.log(perfil.toString()));
   }
 
-  habilitarPerfil(perfilAtivador: PerfiAvancado, perfilAtivado: Perfil) {
-    perfilAtivador.habilitarPerfil(perfilAtivado);
-  }
+  alterarStatusDePerfil(perfilAtivadorID: string, perfilAtivadoID: string, status: string) {
+    const perfilAtivador = this.buscarPerfil(perfilAtivadorID);
+    const perfilAtivado = this.buscarPerfil(perfilAtivadoID)
 
-  desabilitarPerfil(perfilDesabilitador: PerfiAvancado, perfilDesabilitado: Perfil) {
-    perfilDesabilitador.desabilitarPerfil(perfilDesabilitado);
+    if (!perfilAtivador || !perfilAtivado) throw new PerfilNaoEncontradoError();
+    if (!(perfilAtivador instanceof PerfiAvancado)) throw new PerfilNaoAutorizadoError();
+
+    perfilAtivador.alterarStatusPerfil(perfilAtivado, status);
   }
 
   adicionarPublicacao(conteudo: string, data: Date, autorID: string) {
@@ -153,18 +158,17 @@ export class RedeSocial {
     const id = this.publicacoes.length + 1;
     const publicacao = new Publicacao(id, conteudo, data, perfil);
 
-    this.publicacoes.push(publicacao);
     perfil.adicionarPublicacao(publicacao);
+    this.publicacoes.push(publicacao);
   }
 
-  // Novo método para adicionar publicação avançada
   adicionarPublicacaoAvancada(conteudo: string, data: Date, autorID: string) {
     const perfil = this.buscarPerfil(autorID);
     if (!perfil) throw new PerfilNaoEncontradoError();
 
     const id = this.publicacoes.length + 1;
     const publicacaoAvancada = new PublicacaoAvancada(id, conteudo, data, perfil);
-    // Inicialmente, a lista de interações estará vazia (poderia ser preenchida posteriormente)
+
     this.publicacoes.push(publicacaoAvancada);
     perfil.adicionarPublicacao(publicacaoAvancada);
   }

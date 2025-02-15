@@ -1,6 +1,6 @@
 export class InteracaoDuplicadaError extends Error{
     constructor(){
         super();
-        console.log('Essa interação já existe.');
+        this.message = 'Essa interação já existe.'
     }
 }

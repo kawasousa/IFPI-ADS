@@ -1,4 +1,5 @@
 import { AmizadeJaExistenteError } from "../errors/AmizadeJaExistenteError";
+import { PerfilInativoError } from "../errors/PerfilInativoError";
 import { Publicacao } from "./Publicacao";
 
 export class Perfil {
@@ -30,6 +31,8 @@ export class Perfil {
     }
 
     adicionarPublicacao(publicacao: Publicacao) {
+        if(this._status === "Desativado") throw new PerfilInativoError();
+
         this._publicacoes.push(publicacao);
     }
 
@@ -45,14 +48,6 @@ export class Perfil {
         }
     }
 
-    ativarPerfil() {
-        this._status = "Ativado";
-    }
-
-    desativarPerfil() {
-        this._status = "Desativado";
-    }
-
     toString(): string {
         return `🆔 ID: ${this._id} | 🏷️ Apelido: ${this._apelido} | 📧 Email: ${this._email} | 📸 Foto: ${this._foto} | 🔵 Status: ${this._status} | 🧑 Amigos: ${this._amigos.length}
 `
@@ -65,9 +60,12 @@ export class Perfil {
             _foto: this._foto,
             _email: this._email,
             _status: this._status,
-            _publicacoes: this._publicacoes.map(pub => pub.id),
             _amigos: this._amigos.map(amigo => amigo.id)
         };
+    }
+
+    set status(status: string){
+        this._status = status
     }
 
     get apelido(): string {

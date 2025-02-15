@@ -1,6 +1,6 @@
 export class PerfilNaoEncontradoError extends Error{
     constructor(){
         super();
-        console.log('Esse perfil nao existe.');
+        this.message = 'esse perfil nao existe'
     }
 }

@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "conteudo": "Ola Ely :)",
+    "data": "2025-02-15T12:27:49.865Z",
+    "autor": 1
+  },
+  {
+    "id": 2,
+    "conteudo": "Publicacao avancada de exemplo",
+    "data": "2025-02-15T12:33:21.215Z",
+    "autor": 2,
+    "interactions": [
+      {
+        "id": 0,
+        "tipo": "Surpresa",
+        "autor": {
+          "_id": 1,
+          "_apelido": "kawas",
+          "_foto": "😎",
+          "_email": "kawasousa@gmail.com",
+          "_status": "Desativado",
+          "_amigos": []
+        }
+      }
+    ]
+  }
+]

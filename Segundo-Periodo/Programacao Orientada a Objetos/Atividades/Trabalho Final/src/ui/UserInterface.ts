@@ -23,6 +23,7 @@ export default class UserInterface {
           message: "👾 Menu da Rede Social - Escolha uma opção:",
           choices: [
             { name: "➕ Adicionar perfil", value: "adicionarPerfil" },
+            { name: "🌟 Adicionar perfil avançado", value: "adicionarPerfilAvancado" },
             { name: "📋 Listar perfis", value: "listarPerfis" },
             { name: "📝 Adicionar publicação", value: "adicionarPublicacao" },
             { name: "🆕 Adicionar publicação avançada", value: "adicionarPublicacaoAvancada" },
@@ -31,11 +32,12 @@ export default class UserInterface {
             { name: "✅ Aceitar solicitação de amizade", value: "aceitarSolicitacao" },
             { name: "❌ Recusar solicitação de amizade", value: "recusarSolicitacao" },
             { name: "💬 Adicionar interação em publicação avançada", value: "adicionarInteracao" },
+            { name: "🛠️ Mudar status de perfil usando perfil avançado", value: "AlterarStatus" },
             { name: "💾 Salvar dados", value: "salvarDados" },
             { name: "🚪 Sair", value: "sair" },
           ],
           loop: false,
-          pageSize: 11
+          pageSize: 13
         },
       ]);
 
@@ -43,6 +45,9 @@ export default class UserInterface {
       switch (opcao) {
         case "adicionarPerfil":
           await this.adicionarPerfil();
+          break;
+        case "adicionarPerfilAvancado":
+          await this.adicionarPerfilAvancado();
           break;
         case "listarPerfis":
           this.rede.listarPerfis();
@@ -67,6 +72,9 @@ export default class UserInterface {
           break;
         case "adicionarInteracao":
           await this.adicionarInteracao();
+          break;
+        case "AlterarStatus":
+          await this.AlterarStatus();
           break;
         case "salvarDados":
           await this.salvarDados();
@@ -114,13 +122,47 @@ export default class UserInterface {
       respostas.email,
       respostas.status
     );
+    console.log("Perfil avançado adicionado com sucesso! 🎉");
+  }
+
+  private async adicionarPerfilAvancado() {
+    const respostas = await inquirer.prompt([
+      { type: "input", name: "apelido", message: "Informe o apelido:" },
+      {
+        type: "list",
+        name: "foto",
+        message: "Escolha um emoji para a foto:",
+        choices: [
+          { name: "😃 Sorriso", value: "😃" },
+          { name: "😎 Óculos", value: "😎" },
+          { name: "💻 Computador", value: "💻" },
+          { name: "🦄 Unicórnio", value: "🦄" },
+        ],
+        loop: false,
+      },
+      { type: "input", name: "email", message: "Informe o email:" },
+      {
+        type: "list",
+        name: "status",
+        message: "Selecione o status:",
+        choices: ["Ativado", "Desativado"],
+        loop: false,
+      },
+    ]);
+
+    this.rede.adicionarPerfilAvancado(
+      respostas.apelido,
+      respostas.foto,
+      respostas.email,
+      respostas.status
+    );
     console.log("Perfil adicionado com sucesso! 🎉");
   }
 
   private async adicionarPublicacao() {
     const respostas = await inquirer.prompt([
       { type: "input", name: "conteudo", message: "Conteúdo da publicação:" },
-      { type: "input", name: "autorID", message: "Informe o ID, apelido ou email do autor:" },
+      { type: "input", name: "autorID", message: "Informe o ID do autor:" },
     ]);
 
     try {
@@ -134,7 +176,7 @@ export default class UserInterface {
   private async adicionarPublicacaoAvancada() {
     const respostas = await inquirer.prompt([
       { type: "input", name: "conteudo", message: "Conteúdo da publicação avançada:" },
-      { type: "input", name: "autorID", message: "Informe o ID, apelido ou email do autor:" },
+      { type: "input", name: "autorID", message: "Informe o ID do autor:" },
     ]);
 
     try {
@@ -161,12 +203,12 @@ export default class UserInterface {
       {
         type: "input",
         name: "perfilEnviadorId",
-        message: "Informe o ID, apelido ou email do perfil que envia a solicitação:",
+        message: "Informe o ID do perfil que envia a solicitação:",
       },
       {
         type: "input",
         name: "perfilRecebedorId",
-        message: "Informe o ID, apelido ou email do perfil que receberá a solicitação:",
+        message: "Informe o ID do perfil que receberá a solicitação:",
       },
     ]);
 
@@ -183,12 +225,12 @@ export default class UserInterface {
       {
         type: "input",
         name: "perfilEnviadorId",
-        message: "Informe o ID, apelido ou email do perfil que enviou a solicitação:",
+        message: "Informe o ID do perfil que enviou a solicitação:",
       },
       {
         type: "input",
         name: "perfilRecebedorId",
-        message: "Informe o ID, apelido ou email do perfil que recebeu a solicitação:",
+        message: "Informe o ID do perfil que recebeu a solicitação:",
       },
     ]);
 
@@ -205,12 +247,12 @@ export default class UserInterface {
       {
         type: "input",
         name: "perfilEnviadorId",
-        message: "Informe o ID, apelido ou email do perfil que enviou a solicitação:",
+        message: "Informe o ID do perfil que enviou a solicitação:",
       },
       {
         type: "input",
         name: "perfilRecebedorId",
-        message: "Informe o ID, apelido ou email do perfil que recebeu a solicitação:",
+        message: "Informe o ID do perfil que recebeu a solicitação:",
       },
     ]);
 
@@ -232,7 +274,7 @@ export default class UserInterface {
       {
         type: "input",
         name: "autorId",
-        message: "Informe o ID, apelido ou email do autor da interação:",
+        message: "Informe o ID do autor da interação:",
       },
       {
         type: "list",
@@ -256,6 +298,37 @@ export default class UserInterface {
       console.log("Interação adicionada com sucesso! 🎉");
     } catch (error: any) {
       console.error("Erro ao adicionar interação:", error.message);
+    }
+  }
+
+  private async AlterarStatus() {
+    const respostas = await inquirer.prompt([
+      {
+        type: "input",
+        name: "perfiAtivadorID",
+        message: "Informe o ID do perfil que altera o status:",
+      },
+      {
+        type: "input",
+        name: "perfilAtivadoID",
+        message: "Informe o ID do perfil de status alterado:",
+      },
+      {
+        type: "list",
+        name: "status",
+        message: "Selecione o novo status:",
+        choices: [
+          { name: "Ativado", value: "Ativado" },
+          { name: "Desativado", value: "Desativado" }
+        ],
+      },
+    ]);
+
+    try {
+      this.rede.alterarStatusDePerfil(respostas.perfiAtivadorID, respostas.perfilAtivadoID, respostas.status);
+      console.log("Interação adicionada com sucesso! 🎉");
+    } catch (error: any) {
+      console.error("Erro ao alterar status:", error.message);
     }
   }
 

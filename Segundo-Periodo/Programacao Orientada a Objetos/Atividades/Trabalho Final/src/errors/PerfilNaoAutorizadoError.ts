@@ -1,6 +1,6 @@
-export class PerfilJaCadastradoError extends Error{
+export class PerfilNaoAutorizadoError extends Error{
     constructor(){
         super();
-        console.log('Esse perfil não está autorizado.');
+        this.message = 'perfil não autorizado'
     }
 }

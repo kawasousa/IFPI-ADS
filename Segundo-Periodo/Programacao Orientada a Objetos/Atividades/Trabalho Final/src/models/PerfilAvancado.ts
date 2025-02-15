@@ -1,11 +1,11 @@
 import { Perfil } from "./Perfil";
 
 export class PerfiAvancado extends Perfil{
-    habilitarPerfil(perfil: Perfil){
-        perfil.ativarPerfil();
+    alterarStatusPerfil(perfil: Perfil, status: string){
+        perfil.status = status;
     }
 
-    desabilitarPerfil(perfil: Perfil){
-        perfil.desativarPerfil();
+    override toString(): string {
+        return super.toString() + "🌟 | Avançado"
     }
 }

@@ -1,6 +1,6 @@
-export class PerfilJaCadastradoError extends Error{
+export class PerfilInativoError extends Error{
     constructor(){
         super();
-        console.log('Esse perfil está inativo.');
+        this.message = 'Esse perfil está inativo.'
     }
 }
