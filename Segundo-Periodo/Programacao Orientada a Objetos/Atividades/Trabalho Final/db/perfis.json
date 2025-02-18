@@ -5,7 +5,9 @@
     "_foto": "😎",
     "_email": "kawasousa@gmail.com",
     "_status": "Desativado",
-    "_amigos": []
+    "_amigos": [
+      1
+    ]
   },
   {
     "_id": 2,
@@ -13,6 +15,8 @@
     "_foto": "💻",
     "_email": "elias@gmail.com",
     "_status": "Ativado",
-    "_amigos": []
+    "_amigos": [
+      1
+    ]
   }
 ]
