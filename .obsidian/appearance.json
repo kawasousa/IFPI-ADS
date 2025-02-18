@@ -3,5 +3,7 @@
   "baseFontSize": 18,
   "baseFontSizeAction": false,
   "showViewHeader": true,
-  "accentColor": "#2ad593"
+  "accentColor": "#2ad593",
+  "textFontFamily": "DejaVu Sans Mono",
+  "interfaceFontFamily": "DejaVu Sans Mono"
 }

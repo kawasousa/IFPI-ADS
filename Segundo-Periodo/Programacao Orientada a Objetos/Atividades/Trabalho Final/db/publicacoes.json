@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "conteudo": "Olá, esse é meu primeiro post na plataforma :)",
+    "data": "2025-02-18T02:04:17.992Z",
+    "autor": {
+      "_id": 1,
+      "_apelido": "kawas",
+      "_foto": "💻",
+      "_email": "kawasousacoontato@gmail.com",
+      "_status": "Ativado",
+      "_publicacoes": [],
+      "_amigos": []
+    }
+  }
+]

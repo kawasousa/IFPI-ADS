@@ -1,0 +1,17 @@
+{
+  "name": "trabalho-final",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "scripts": {
+    "start": "ts-node ./src/index.ts"
+  },
+  "author": "Kawã Sousa",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "inquirer": "^12.4.2"
+  }
+}
