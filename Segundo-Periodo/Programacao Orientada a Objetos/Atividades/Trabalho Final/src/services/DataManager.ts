@@ -12,7 +12,6 @@ export class DataManager {
             console.log('Perfis carregados com sucesso! 🎉');
             return perfis;
         } catch (error) {
-            console.error('Erro ao ler perfis:', error);
             return [];
         }
     }
@@ -24,7 +23,6 @@ export class DataManager {
             console.log('Publicações carregadas com sucesso! 🚀');
             return publicacoes;
         } catch (error) {
-            console.error('Erro ao ler publicações:', error);
             return [];
         }
     }

@@ -54,7 +54,20 @@ export class Perfil {
     }
 
     toString(): string {
-        return `🆔 ID: ${this._id} | 🏷️ Apelido: ${this._apelido} | 📧 Email: ${this._email} | 📸 Foto: ${this._foto} | 🔵 Status: ${this._status}`;
+        return `🆔 ID: ${this._id} | 🏷️ Apelido: ${this._apelido} | 📧 Email: ${this._email} | 📸 Foto: ${this._foto} | 🔵 Status: ${this._status} | 🧑 Amigos: ${this._amigos.length}
+`
+    }
+
+    toJSON() {
+        return {
+            _id: this._id,
+            _apelido: this._apelido,
+            _foto: this._foto,
+            _email: this._email,
+            _status: this._status,
+            _publicacoes: this._publicacoes.map(pub => pub.id),
+            _amigos: this._amigos.map(amigo => amigo.id)
+        };
     }
 
     get apelido(): string {

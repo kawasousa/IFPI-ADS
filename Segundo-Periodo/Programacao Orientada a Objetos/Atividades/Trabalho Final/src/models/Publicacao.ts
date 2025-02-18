@@ -14,7 +14,17 @@ export class Publicacao {
     }
 
     toString(): string {
-        return 'ola'
-        // return `🆔 ID: ${this.id} | ✍️ Autor: ${this.autor.apelido} | 📅 Data: ${this.data.toLocaleString()} | 📢 Conteúdo: "${this.conteudo}"`;
+        return `
+🆔 ID: ${this.id} | ✍️ Autor: ${this.autor.apelido} | 📅 Data: ${this.data.toLocaleString()}
+📢 Conteúdo: "${this.conteudo}"`;
+    }
+
+    toJSON() {
+        return {
+            id: this.id,
+            conteudo: this.conteudo,
+            data: this.data.toISOString(),
+            autor: this.autor.id
+        };
     }
 }

@@ -15,6 +15,7 @@ export default class UserInterface {
 
     let exit = false;
     while (!exit) {
+      console.log();
       const { opcao } = await inquirer.prompt([
         {
           type: "list",
@@ -24,6 +25,7 @@ export default class UserInterface {
             { name: "➕ Adicionar perfil", value: "adicionarPerfil" },
             { name: "📋 Listar perfis", value: "listarPerfis" },
             { name: "📝 Adicionar publicação", value: "adicionarPublicacao" },
+            { name: "🆕 Adicionar publicação avançada", value: "adicionarPublicacaoAvancada" },
             { name: "📄 Listar publicações", value: "listarPublicacoes" },
             { name: "✉️  Enviar solicitação de amizade", value: "enviarSolicitacao" },
             { name: "✅ Aceitar solicitação de amizade", value: "aceitarSolicitacao" },
@@ -33,7 +35,7 @@ export default class UserInterface {
             { name: "🚪 Sair", value: "sair" },
           ],
           loop: false,
-          pageSize: 10
+          pageSize: 11
         },
       ]);
 
@@ -47,6 +49,9 @@ export default class UserInterface {
           break;
         case "adicionarPublicacao":
           await this.adicionarPublicacao();
+          break;
+        case "adicionarPublicacaoAvancada":
+          await this.adicionarPublicacaoAvancada();
           break;
         case "listarPublicacoes":
           await this.listarPublicacoes();
@@ -112,10 +117,7 @@ export default class UserInterface {
     console.log("Perfil adicionado com sucesso! 🎉");
   }
 
-
   private async adicionarPublicacao() {
-    console.log('listando');
-    
     const respostas = await inquirer.prompt([
       { type: "input", name: "conteudo", message: "Conteúdo da publicação:" },
       { type: "input", name: "autorID", message: "Informe o ID, apelido ou email do autor:" },
@@ -126,6 +128,20 @@ export default class UserInterface {
       console.log("Publicação adicionada com sucesso! 🚀");
     } catch (error: any) {
       console.error("Erro ao adicionar publicação:", error.message);
+    }
+  }
+
+  private async adicionarPublicacaoAvancada() {
+    const respostas = await inquirer.prompt([
+      { type: "input", name: "conteudo", message: "Conteúdo da publicação avançada:" },
+      { type: "input", name: "autorID", message: "Informe o ID, apelido ou email do autor:" },
+    ]);
+
+    try {
+      this.rede.adicionarPublicacaoAvancada(respostas.conteudo, new Date(), respostas.autorID);
+      console.log("Publicação avançada adicionada com sucesso! 🚀");
+    } catch (error: any) {
+      console.error("Erro ao adicionar publicação avançada:", error.message);
     }
   }
 
@@ -223,10 +239,10 @@ export default class UserInterface {
         name: "tipo",
         message: "Selecione o tipo de interação:",
         choices: [
-          { name: "Curtir 😊", value: "Curtir" },
-          { name: "Não Curtir 😢", value: "NaoCurtir" },
+          { name: "Curtir 👍", value: "Curtir" },
+          { name: "Não Curtir 👎", value: "NaoCurtir" },
           { name: "Riso 😂", value: "Riso" },
-          { name: "Surpresa 😮", value: "Surpresa" },
+          { name: "Surpresa 😲", value: "Surpresa" },
         ],
       },
     ]);
