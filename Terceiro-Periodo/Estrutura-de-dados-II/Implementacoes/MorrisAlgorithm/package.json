@@ -1,0 +1,11 @@
+{
+  "name": "morrisalgorithm",
+  "version": "1.0.0",
+  "main": "src/Main.ts",
+  "scripts": {
+    "start": "npx ts-node-dev src/Main.ts"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0"
+  }
+}
