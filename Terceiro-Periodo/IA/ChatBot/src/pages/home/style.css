@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-white);
+    font-family: "Montserrat Alternates", cursive;
+    scroll-behavior: smooth;
+
+    --color-black: #1f1f1f;
+    --color-white: #FFFFFF;
+    --color-green: #A2FF79;
+    --color-light-green: #D4FFC2;
+    --color-orange: #FF9900;
+    --color-dark-gray: #333136;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+    background-color: var(--color-black);
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.div-title{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    position: fixed;
+    top: 0;
+    padding: 1rem 2rem;
+    width:  100%;
+    background-color: var(--color-black);
+}
+
+.div-chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding-top: 3rem;
+    padding-bottom: 20rem;
+    flex: 1;
+    width: 40%;
+    min-width: 25rem;
+}
+
+.div-message-field {
+    display: flex;
+    width: 100%;
+    padding: 0 .8rem;
+}
+
+.div-message-field-response{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.div-message-field-query{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.div-message {
+    background-color: var(--color-dark-gray);
+    width: 80%;
+    padding: .8rem 1.5rem;
+    border-radius: .8rem;
+}
+
+.div-message-query{
+    border-radius: 1rem 0.2rem 1.5rem 1rem;
+}
+
+.div-message-response{
+    border-radius: .2rem 1rem 1rem 2rem;
+    background-color: transparent;
+    border: var(--color-light-green) solid 1px;
+}
+
+.div-chat-icon{
+    width: 2rem;
+    margin-right: .5rem;
+}
+
+.div-chat-icon img{
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.form-input-field {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 2rem;
+    padding: 1rem;
+    gap: 1rem;
+    width: 90%;
+    max-width: 45rem;
+    border-radius: 1rem;
+    border: var(--color-dark-gray) solid 1px;
+    background-color: var(--color-black);
+    outline: var(--color-black) solid 2rem;
+}
+
+.div-attachment-icon{
+    display: flex;
+    gap: .5rem;
+    width: 100%;
+    max-height: 5rem;
+    overflow: scroll;
+}
+
+.div-attachment-icon::-webkit-scrollbar{
+    display: none;
+}
+
+.div-attachment-icon img{
+    max-width: auto;
+    height: 100%;
+    display: block;
+    border-radius: .5rem;
+}
+
+.div-attachment-icon img:hover{
+    outline: var(--color-orange) solid 2px;
+}
+
+.div-attachment-field input{
+display: none;
+}
+
+.div-attachment-field label:hover{
+    color: var(--color-light-green);
+}
+
+@media screen and (max-width: 425px) {
+    .div-title{
+        justify-content: center;
+    }
+
+    .div-title img{
+        display: none;
+    }
+}
