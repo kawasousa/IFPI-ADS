@@ -2,15 +2,64 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    --color-blue-dark: #374258;
+    --color-blue-light: #6a7285;
+    --color-dark-gray-dark: #F3f3f3;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-black);
+    padding: .2rem;
+}
+
+a:hover{
+    transition-duration: .2s;
+    color: var(--color-blue-light);
+}
+
+input, button{
+    padding: .5rem;
+    border-radius: .3rem;
+}
+
+select {
+    width: fit-content;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-blue-dark);
+}
+
+footer{
+    padding: .5rem;
+    margin-top: 1rem;
+    border-radius: .2rem .2rem .5rem .5rem;
+    width: 15%;
+    background-color: var(--color-dark-gray-dark);
 }
 
 .oculto{
     display: none;
 }
 
-/* .mensagem{
-
-} */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    padding: 1rem;
+    border: var(--color-black) solid 2px;
+    background-color: var(--color-dark-gray-dark);
+}
 
 .mensagem-erro{
     color: red;

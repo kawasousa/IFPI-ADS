@@ -21,5 +21,5 @@ export function getNumberOrNull(value){
 }
 
 export function getByName(name){
-    return document.getElementsByName(name);
+    return [...document.getElementsByName(name)];
 }
