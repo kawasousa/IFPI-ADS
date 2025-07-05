@@ -1,0 +1,16 @@
+-- Ranking por FATURAMENTO
+SELECT * FROM OBTER_RANKING('2025-06-01', '2025-06-30', 'faturamento');
+
+-- Ranking por VENDAS
+SELECT * FROM OBTER_RANKING('2025-06-01', '2025-06-30', 'vendas');
+
+-- Obter balanço
+SELECT * FROM OBTER_BALANCO('2025-06-01', '2025-07-05');
+
+-- Segmentar clientes
+SELECT * FROM SEGMENTAR_CLIENTES();
+
+-- Análise de cupons
+SELECT * FROM ANALISAR_CUPONS('2025-06-01', '2025-07-31');
+
+SELECT * FROM OBTER_ALERTA_ESTOQUE(15, 90);
