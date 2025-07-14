@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Lista de Desejos - ASO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4338CA;
+            --secondary-color: #EC4899;
+            --background-color: #F3F4F6;
+            --card-background: #FFFFFF;
+            --text-primary: #1F2937;
+            --text-secondary: #6B7280;
+            --border-color: #E5E7EB;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--background-color); margin: 0; }
+        .header {
+            background-color: var(--card-background);
+            padding: 16px 48px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .header .logo { font-size: 24px; font-weight: 700; color: var(--primary-color); margin-right: auto; }
+        .header a { color: var(--text-secondary); text-decoration: none; margin-left: 24px; font-weight: 500; transition: color 0.3s; }
+        .header a:hover { color: var(--primary-color); }
+        .main-container {
+            max-width: 800px;
+            margin: 48px auto;
+            background-color: var(--card-background);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0 0 8px 0;
+        }
+        .subtitle {
+            color: var(--text-secondary);
+            margin: 0 0 32px 0;
+        }
+        .add-item-form {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .add-item-form input {
+            flex-grow: 1;
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .add-item-form input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(67, 56, 202, 0.2);
+        }
+        .btn-add {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .btn-add:hover { background-color: #3730A3; }
+        .wishlist { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+        .wishlist-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F9FAFB;
+            padding: 16px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: box-shadow 0.3s, border-color 0.3s;
+        }
+        .wishlist-item:hover {
+            border-color: #D1D5DB;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .wishlist-item span {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+        .btn-remove {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .btn-remove:hover { color: #EF4444; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">ASO</div>
+        <a href="#dashboard">Meus Grupos</a>
+        <a href="#perfil">Meu Perfil</a>
+    </header>
+    <div class="main-container">
+        <h1>Minha Lista de Desejos ✨</h1>
+        <p class="subtitle">Seu amigo secreto vai adorar estas dicas. Capriche!</p>
+        
+        <div class="add-item-form">
+            <input type="text" placeholder="Adicionar um novo desejo...">
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <ul class="wishlist">
+            <li class="wishlist-item">
+                <span>Livro "Engenharia de Software" do Sommerville</span>
+                <button class="btn-remove">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                </button>
+            </li>
+            <li class="wishlist-item">
+                <span>Caneca temática de Star Wars</span>
+                <button class="btn-remove">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                </button>
+            </li>
+            <li class="wishlist-item">
+                <span>Um vale-presente de R$ 50 na Steam</span>
+                <button class="btn-remove">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

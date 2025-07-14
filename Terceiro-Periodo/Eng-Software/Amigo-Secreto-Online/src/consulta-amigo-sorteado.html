@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Amigo Secreto é... - ASO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4338CA;
+            --secondary-color: #EC4899;
+        }
+        body { 
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #111827, #1F2937);
+            overflow: hidden;
+        }
+        .confetti {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 20px;
+            background: var(--c);
+            top: -50px;
+            opacity: 0;
+            animation: drop 5s linear infinite;
+        }
+        @keyframes drop {
+            0% { transform: translateY(0) rotateZ(0deg); opacity: 1; }
+            100% { transform: translateY(105vh) rotateZ(720deg); opacity: 0; }
+        }
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 2;
+        }
+        .reveal-card {
+            text-align: center;
+            color: white;
+            animation: pop-in 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            transform: scale(0.8);
+            opacity: 0;
+        }
+        @keyframes pop-in {
+            to { transform: scale(1); opacity: 1; }
+        }
+        .reveal-card p {
+            font-size: 24px;
+            font-weight: 500;
+            opacity: 0.8;
+            margin: 0;
+        }
+        .reveal-card .friend-name {
+            font-size: clamp(3rem, 10vw, 6rem);
+            font-weight: 900;
+            margin: 16px 0;
+            background: linear-gradient(45deg, var(--secondary-color), #f871b5, #fde68a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 4px 20px rgba(236, 72, 153, 0.3);
+            animation: text-reveal 2s ease-in-out 0.5s forwards;
+            opacity: 0;
+        }
+        @keyframes text-reveal {
+            to { opacity: 1; }
+        }
+        .wishlist-section {
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            margin-top: 40px;
+            border-radius: 16px;
+            padding: 32px;
+            width: 100%;
+            max-width: 600px;
+            text-align: left;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: slide-up 1s ease-out 1s forwards;
+            opacity: 0;
+        }
+        @keyframes slide-up {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .wishlist-section h2 {
+            margin: 0 0 24px 0;
+            color: #F9FAFB;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .wishlist { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+        .wishlist-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #E5E7EB;
+            padding: 16px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="confetti"></div>
+    <div class="main-container">
+        <div class="reveal-card">
+            <p>No grupo "Amigo Secreto da Firma", você tirou...</p>
+            <h1 class="friend-name">Kawã Sousa de Lima</h1>
+        </div>
+
+        <div class="wishlist-section">
+            <h2>🎁 Lista de Desejos:</h2>
+            <ul class="wishlist">
+                <li class="wishlist-item">Mouse sem fio gamer</li>
+                <li class="wishlist-item">Action figure do Groot</li>
+                <li class="wishlist-item">Camisa de time de basquete</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // Simple confetti script
+        const confettiContainer = document.querySelector('.confetti');
+        const colors = ['#EC4899', '#F871B5', '#4338CA', '#818CF8', '#FBBF24'];
+        for (let i = 0; i < 100; i++) {
+            const confettiPiece = document.createElement('div');
+            confettiPiece.classList.add('confetti-piece');
+            confettiPiece.style.left = Math.random() * 100 + 'vw';
+            confettiPiece.style.animationDelay = Math.random() * 5 + 's';
+            confettiPiece.style.setProperty('--c', colors[Math.floor(Math.random() * colors.length)]);
+            confettiContainer.appendChild(confettiPiece);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Grupo - ASO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4338CA;
+            --secondary-color: #EC4899;
+            --success-color: #10B981;
+            --danger-color: #EF4444;
+            --background-color: #F3F4F6;
+            --card-background: #FFFFFF;
+            --text-primary: #1F2937;
+            --text-secondary: #6B7280;
+            --border-color: #E5E7EB;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--background-color); margin: 0; }
+        .header {
+            background-color: var(--card-background);
+            padding: 16px 48px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .header .logo { font-size: 24px; font-weight: 700; color: var(--primary-color); margin-right: auto; }
+        .header a { color: var(--text-secondary); text-decoration: none; margin-left: 24px; font-weight: 500; transition: color 0.3s; }
+        .header a:hover { color: var(--primary-color); }
+        .main-container { max-width: 900px; margin: 48px auto; padding: 0 24px; }
+        
+        .page-header {
+            padding: 32px;
+            background-color: var(--card-background);
+            border-radius: 16px;
+            margin-bottom: 32px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+        }
+        .page-header h1 { font-size: 32px; font-weight: 700; color: var(--text-primary); margin: 0 0 8px 0; }
+        .page-header p { font-size: 16px; color: var(--text-secondary); margin: 0; }
+        
+        .section-card {
+            background-color: var(--card-background);
+            border-radius: 16px;
+            margin-bottom: 32px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .card-header { padding: 24px; border-bottom: 1px solid var(--border-color); }
+        .card-header h2 { font-size: 20px; font-weight: 600; color: var(--text-primary); margin: 0; display: flex; align-items: center; gap: 12px; }
+        .card-content { padding: 24px; }
+        
+        /* Invite Section */
+        .invite-link-area { display: flex; align-items: center; gap: 16px; }
+        .invite-link-area input {
+            flex-grow: 1; padding: 12px 16px; border: 1px solid var(--border-color); border-radius: 8px;
+            background-color: #F9FAFB; font-size: 14px; font-family: 'Inter', sans-serif; color: var(--text-secondary);
+        }
+        .btn-copy {
+            background-color: var(--primary-color); color: white; padding: 12px 16px; border: none;
+            border-radius: 8px; cursor: pointer; font-weight: 500; display: flex; align-items: center; gap: 8px;
+            transition: background-color 0.3s;
+        }
+        .btn-copy:hover { background-color: #3730A3; }
+
+        /* Participants List Section */
+        .participants-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; }
+        .participant-item {
+            display: flex;
+            align-items: center;
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color 0.2s ease;
+        }
+        .participant-item:last-child { border-bottom: none; }
+        .participant-item:hover { background-color: #F9FAFB; }
+        .participant-info { flex-grow: 1; }
+        .participant-info .name { font-weight: 600; color: var(--text-primary); }
+        .participant-info .email { font-size: 14px; color: var(--text-secondary); }
+        .status { padding: 4px 12px; border-radius: 99px; font-size: 12px; font-weight: 600; margin-left: auto; margin-right: 24px; }
+        .status-accepted { background-color: #D1FAE5; color: #065F46; }
+        .status-pending { background-color: #FEF3C7; color: #92400E; }
+        .btn-remove {
+            background: none; border: none; color: var(--text-secondary); cursor: pointer;
+            padding: 8px; border-radius: 50%; transition: color 0.2s, background-color 0.2s;
+        }
+        .btn-remove:hover { color: var(--danger-color); background-color: #FEE2E2; }
+        
+        /* Draw Section */
+        .draw-section-card {
+            background-color: #F0FDF4;
+            border: 1px solid #A7F3D0;
+        }
+        .draw-section .card-header h2 { color: #065F46; }
+        .draw-section-content { text-align: center; }
+        .draw-section-content p { color: #047857; max-width: 500px; margin: 0 auto 24px auto; line-height: 1.6; }
+        .btn-draw {
+            background: linear-gradient(to right, #10B981, #34D399);
+            color: white; padding: 16px 40px; border: none;
+            border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: 700;
+            transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.25);
+        }
+        .btn-draw:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3); }
+        .btn-draw:disabled {
+            background: #9CA3AF; cursor: not-allowed; box-shadow: none; transform: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">ASO</div>
+        <a href="#dashboard">Meus Grupos</a>
+        <a href="#perfil">Meu Perfil</a>
+    </header>
+
+    <div class="main-container">
+        <div class="page-header">
+            <h1>Gerenciando: Amigo Secreto da Firma</h1>
+            <p>Acompanhe os participantes, convide mais amigos e realize o grande sorteio.</p>
+        </div>
+
+        <div class="section-card">
+            <div class="card-header">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72"></path></svg>
+                    Convite do Grupo
+                </h2>
+            </div>
+            <div class="card-content">
+                <p style="margin-top:0; margin-bottom: 16px; color: var(--text-secondary); font-size: 14px;">Compartilhe este link para que outras pessoas possam entrar no grupo.</p>
+                <div class="invite-link-area">
+                    <input type="text" value="https://aso.com/invite/a1b2-c3d4-e5f6" readonly>
+                    <button class="btn-copy">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                         <span>Copiar</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <div class="card-header">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    Lista de Participantes (3)
+                </h2>
+            </div>
+            <div class="participants-list">
+                <div class="participant-item">
+                    <div class="participant-info">
+                        <div class="name">Felipe Gabriel (Você)</div>
+                        <div class="email">felipe.marques@email.com</div>
+                    </div>
+                    <span class="status status-accepted">Aceito</span>
+                    <div></div></div>
+                <div class="participant-item">
+                    <div class="participant-info">
+                        <div class="name">Kawã Sousa</div>
+                        <div class="email">kawa.lima@email.com</div>
+                    </div>
+                    <span class="status status-accepted">Aceito</span>
+                    <button class="btn-remove">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                    </button>
+                </div>
+                <div class="participant-item">
+                    <div class="participant-info">
+                        <div class="name">Pedro Victor</div>
+                        <div class="email">pedro.santos@email.com</div>
+                    </div>
+                    <span class="status status-pending">Pendente</span>
+                    <button class="btn-remove">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card draw-section-card draw-section">
+            <div class="card-header">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.06a2.85 2.85 0 0 1-4.03 0l-.45-.45a2.85 2.85 0 0 1 0-4.03z"></path><path d="m14.5 18.5-4-4"></path></svg>
+                    Tudo pronto para o Sorteio?
+                </h2>
+            </div>
+            <div class="card-content draw-section-content">
+                <p>Esta ação é definitiva e não pode ser desfeita. O sistema realizará o sorteio e notificará todos os participantes com o resultado.</p>
+                <button id="draw-button" class="btn-draw">Realizar Sorteio Agora!</button>
+                <p style="font-size: 12px; color: #047857; margin-top: 15px; opacity: 0.8;">É necessário ter no mínimo 3 participantes com convite aceito.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
