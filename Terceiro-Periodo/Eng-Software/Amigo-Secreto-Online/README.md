@@ -21,9 +21,9 @@ O ASO elimina as falhas comuns no processo manual de sorteio de amigo secreto, c
 
 ## 👥 Equipe
 
-- **Felipe Gabriel Freitas Marques**
-- **Kawã Sousa de Lima**
-- **Pedro Victor Venâncio dos Santos**
+- [**Felipe Gabriel Freitas Marques**](https://github.com/GabrFelps)
+- [**Kawã Sousa de Lima**](https://github.com/kawasousa)
+- [**Pedro Victor Venâncio dos Santos**](https://github.com/PedroVenanci0)
 
 ---
 
